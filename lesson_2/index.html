@@ -1,0 +1,133 @@
+
+		<!-- A - гіпертекстове посилання (з зачиняючим елементом) -->
+		<!-- <a href="адреса">Текст (анкор)</a> -->
+		<a href="https://google.com">
+			Google
+		</a>
+		<!--  
+			Атрибут target - встановлює 
+			де саме має відкритись адреса 
+		-->
+		<a target="_blank" href="https://google.com">
+			Google у новій вкладці
+		</a>
+
+		<!-- DIV з класом block -->
+		<div class="block"></div>
+		<!-- P з класом block -->
+		<p class="text"></p>
+		<!-- DIV з класами block та red -->
+		<div class="block red"></div>
+
+		<!-- 
+			TITLE - підказка
+		 -->
+		<a target="_blank" title="На сайт Google" href="https://google.com" class="link">
+			Google
+		</a>
+		<p title="Це текст-риба" class="text">
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, deleniti. 
+		</p>
+
+		<!-- 
+			ID - УНІКАЛЬНИЙ ідентифікатор
+			Значення ID має бути унікальним для html сторінки
+		 -->
+		<div class="text">
+			<p id="some-uniq-id">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere corporis 
+			</p>
+		</div>
+
+
+
+
+
+		<!-- Практичний приклад -->
+		<!-- Сторінка статті -->
+<html lang="en">
+	<head>
+		<!-- Кодування тексту -->
+		<meta charset="UTF-8">
+		<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Заголовок сторінки в браузері -->
+		<title>Lesson 2</title>
+	</head>
+	<body>
+		<header>
+			<!-- якась конструкція -->
+			<div>
+				<ul class="menu">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="experience.html">My Professional Experience</a>
+					</li>
+					<li>
+						<a href="education.html">My Education</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main>
+			<div class="block">
+				<h1>Lesson 2 of the website layout course</h1>
+				<h2>Teacher: Andrikanych Yevhen</h2>
+				<h3>Spring, 2024</h3>
+				<h4>Homework</h4>
+				<h5>Task: use all the learned tags</h5>
+				<h6>CURRICULUM VITAE</h6>
+				<img src="img/pavlo.jpg" alt="Photo of a man against the background of the sea">
+				<ol class="cv-sections">
+					<li>Name: <mark>Pavlo ORHUNOV</mark></li>
+					<li>Age: <span>55</span></li>
+					<li>Cell phone: +380 50 322 1313 (Telegram, Viber),	<br>
+LinkedIn profile:target="_blank" https://www.linkedin.com/in/pavloorhunov/ <br>
+e-mail: pavlo.orhunov@gmail.com <br>
+FB profile: target="_blank" https://facebook.com/PavloOrhunov
+</li>
+					<li>Location: <mark>Kyiv</mark></li>
+					<li>Professional skills:
+						<ul>
+							<li>
+								Have theoretical knowledge of testing.
+							</li>
+							<li>
+								Completed several online courses on testing theory. Received a Certificate.
+							</li>
+							<li>
+								Have some practical experience in testing, work as a freelancer on the uTest platform, having previously completed all uTest Academy courses.
+							</li>
+							<li>
+								6+ years of experience in finance management (international Projects and local company).
+							</li>							
+							<li>
+								Wide experience in confidential handling of various type of documents, data and information.
+							</li>							
+							<li>
+								PC advanced user.
+							</li>							
+
+						</ul>
+					</li>
+					
+					<li>
+						Language skills: Russian (mother tongue), Ukrainian, English.
+					</li>
+					<li>
+						<a title="to Professional Experience Record page" href="experience.html">Professional Experience Record:</a>
+					</li>
+					<li>
+						<a title="to Education page" href="education.html">Education</a>
+					</li>					
+				</ol>			
+			</div>
+		</main>
+		<footer>
+			<p class="copy">All rights reserved by Pavlo</p>
+		</footer>
+
+	</body>
+</html>

@@ -1,0 +1,102 @@
+
+		<!-- A - гіпертекстове посилання (з зачиняючим елементом) -->
+		<!-- <a href="адреса">Текст (анкор)</a> -->
+		<a href="https://google.com">
+			Google
+		</a>
+		<!--  
+			Атрибут target - встановлює 
+			де саме має відкритись адреса 
+		-->
+		<a target="_blank" href="https://google.com">
+			Google у новій вкладці
+		</a>
+
+		<!-- DIV з класом block -->
+		<div class="block"></div>
+		<!-- P з класом block -->
+		<p class="text"></p>
+		<!-- DIV з класами block та red -->
+		<div class="block red"></div>
+
+		<!-- 
+			TITLE - підказка
+		 -->
+		<a target="_blank" title="На сайт Google" href="https://google.com" class="link">
+			Google
+		</a>
+		<p title="Це текст-риба" class="text">
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, deleniti. 
+		</p>
+
+		<!-- 
+			ID - УНІКАЛЬНИЙ ідентифікатор
+			Значення ID має бути унікальним для html сторінки
+		 -->
+		<div class="text">
+			<p id="some-uniq-id">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere corporis 
+			</p>
+		</div>
+
+
+
+
+
+		<!-- Практичний приклад -->
+		<!-- Сторінка статті -->
+<html lang="en">
+	<head>
+		<!-- Кодування тексту -->
+		<meta charset="UTF-8">
+		<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Заголовок сторінки в браузері -->
+		<title>Lesson 2</title>
+	</head>
+	<body>
+		<header>
+			<!-- якась конструкція -->
+			<div>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="experience.html">My Professional Experience</a>
+					</li>
+					<li>
+						<a href="education.html">My Education</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main>
+			<div>
+			<h1>My Education page</h1>
+				<p>
+					Periods:
+					dolor sit amet, consectetur adipisicing elit. Porro facere est soluta <a target="_blank" href="https://google.com">expedita</a> ab reprehenderit iste itaque maiores nobis amet saepe laboriosam provident, commodi eveniet, doloremque dignissimos tempora mollitia numquam!
+				</p>
+				<ul>
+					<li>
+						<a href="#period-1">1986 - 1990</a>
+					</li>
+					<li>
+						<a href="#period-2">1990 - 1992</a>
+					</li>
+					<li>
+						<a href="#period-3">1992 - 1997</a>
+					</li>
+
+				</ul>
+		
+		
+			</div>
+		</main>
+		<footer>
+			<p class="copy">All rights reserved by Pavlo</p>
+		</footer>
+
+	</body>
+</html>
