@@ -1,0 +1,62 @@
+@import url("reset.css");
+
+* {
+  color: black;
+}
+
+.menu li > a {
+  color: darkgreen;
+}
+
+.title {
+  color: blue;
+}
+
+.chapter.chapter-9 {
+  color: aqua;
+}
+
+.subtitle {
+  color: red;
+}
+
+.subtitle ~ p {
+  color: sienna;
+}
+
+.subtitle ~ p.war {
+  color: crimson;
+}
+
+.subtitle + p {
+  color: lightgray;
+}
+
+.items > li > ul > li {
+  color: indigo;
+}
+
+.items > li {
+  color: darkgray;
+}
+
+.link {
+  color: yellowgreen;
+}
+
+.copy p {
+  color: green;
+}
+
+.copy p > a {
+  color: darkblue;
+}
+
+[class*="ems"] li > span {
+  color: orange;
+}
+
+#importance,
+#history {
+  color: yellow;
+}
