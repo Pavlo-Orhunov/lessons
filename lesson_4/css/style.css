@@ -1,0 +1,356 @@
+/* ========================= ШРИФТИ =============================== */
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* ================================================================ */
+/* Скидання стилів */
+@import url("reset.css");
+
+/* ================================================================ */
+/* Верстаємо нову статтю, використовуючи УСІ властивості шрифту та тексту та їх значення.*/
+body {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  color: #2b2929;
+}
+
+.proxima-nova {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-it {
+  font-style: italic;
+}
+
+.rubik {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rubik-it {
+  font-style: italic;
+}
+
+.header {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 3;
+  letter-spacing: 20px;
+  word-spacing: 30px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3), -2px -2px 5px red;
+}
+
+.page {
+  line-height: 1.75;
+}
+
+.title {
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: 20px;
+  color: rgb(76, 0, 197);
+  text-decoration: underline;
+  text-decoration-color: rgb(132, 0, 255);
+  text-decoration-style: wavy;
+}
+
+.subtitle {
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 3;
+  color: rgb(62, 197, 0);
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 73, 0);
+  text-decoration-style: dashed;
+}
+
+.lesson-section {
+  font-size: 18px;
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.f-type {
+  letter-spacing: 3px;
+}
+
+.serif {
+  font-family: serif;
+}
+
+.serif span {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.sans-serif {
+  font-family: sans-serif;
+}
+
+.sans-serif span {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.cursive {
+  font-family: cursive;
+}
+
+.cursive span {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.fantasy {
+  font-family: fantasy;
+}
+
+.fantasy span {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+.monospace {
+  font-family: monospace;
+}
+
+.monospace span {
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+.f-size {
+  letter-spacing: 2px;
+}
+
+.fz-16 {
+  font-style: normal;
+  font-size: 16px;
+}
+
+.fz-8 {
+  font-size: 8px;
+}
+
+.fz-40 {
+  font-size: 40px;
+}
+
+.f-style {
+  letter-spacing: 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.normal {
+  font-style: normal;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.f-weight {
+  font-size: 22px;
+  word-spacing: 10px;
+}
+
+.w-light {
+  font-weight: 300;
+}
+
+.w-regular {
+  font-weight: normal;
+}
+
+.w-bold {
+  font-weight: 700;
+}
+
+.txt-properties {
+  line-height: 3;
+  word-spacing: 2px;
+}
+
+.txt-color {
+  color: brown;
+}
+
+.txt-hex {
+  color: #ffa500;
+}
+
+.txt-rgba {
+  color: rgba(0, 191, 255, 0.9);
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-justify {
+  text-align: justify;
+}
+
+.decors span {
+  font-weight: 700;
+  text-decoration-color: rgb(0, 191, 255);
+}
+
+.decor-line-through {
+  text-decoration: line-through;
+}
+
+.decor-overline {
+  text-decoration: overline;
+}
+
+.decor-underline {
+  text-decoration: underline;
+}
+
+.decor-none {
+  text-decoration: none;
+}
+
+.decor-styles span {
+  font-size: 24px;
+  letter-spacing: 8px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.decor-color {
+  text-decoration: overline;
+  text-decoration-style: wavy;
+  text-decoration-color: #ffa500;
+}
+
+.decor-style-wavy {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: rgb(0, 191, 255);
+}
+
+.decor-style-dashed {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: rgb(0, 191, 255);
+}
+
+.decor-style-double {
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-decoration-color: rgb(0, 191, 255);
+}
+
+.decor-style-dotted {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: rgb(0, 191, 255);
+}
+
+.txt-shadow {
+  font-size: 30px;
+  font-weight: 500;
+  text-shadow: 3px 3px 3px #ffa500;
+}
+
+.txt-transform {
+  font-style: italic;
+}
+
+.reg-cap {
+  text-transform: capitalize;
+}
+
+.reg-low {
+  text-transform: lowercase;
+}
+
+.reg-up {
+  text-transform: uppercase;
+}
+
+.txt-lh {
+  font-size: 26px;
+  line-height: 140px;
+}
+
+.txt-ls {
+  font-size: 24px;
+  letter-spacing: 16px;
+}
+
+.txt-ws {
+  line-height: 130px;
+  word-spacing: 40px;
+  white-space: nowrap;
+}
+
+/* ---- Верстаємо блоки з макету KROVATO --- */
+
+.seo-text {
+  line-height: 1.87;
+}
+
+.blog-article-heading {
+  text-align: initial;
+}
+
+.headline-h5 {
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1.26;
+}
+
+.blog-article-text {
+  line-height: 1.87;
+}
+
+.headline-h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.footer {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 3;
+  letter-spacing: 15px;
+  word-spacing: 20px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3), -2px -2px 5px red;
+}
