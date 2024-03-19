@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Заняття 5</title>
+</head>
+
+<body>
+  <header class="header roboto roboto-it">This is LOGO</header>
+  <main class="page">
+    <div class="wrapper">
+      <p class="title">Заняття 5</p>
+      <h1 class="subtitle">Вивчаємо CSS-властивості блоків</h1>
+      <p class="sorry">
+        <span>*</span>вибачайте, але в нас зараз не дуже все тут адаптивно...
+      </p>
+      <div class="lesson-section">
+        <div class="paddings">
+          <div class="padding">
+            Анатомія властивості: padding: немає; <br>
+            приклад запису де padding не буде для усіх сторін <br>
+            padding: 0px; <br>
+          </div>
+          <div class="padding p-all">
+            Анатомія властивості: padding: з_усіх_сторін; <br>
+            приклад запису де padding буде 10px для усіх сторін <br>
+            padding: 10px; <br>
+          </div>
+          <div class="padding p-2">
+            Анатомія властивості: padding: зверху_знизу зправа_зліва; <br>
+            приклад запису де padding буде зверху та знизу по 10px а зліва і
+            зправа по 5px <br>
+            padding: 10px 5px; <br>
+          </div>
+          <div class="padding p-3">
+            Анатомія властивості: padding: зверху зправа_зліва знизу; <br>
+            приклад запису де padding буде зверху 10px а зліва і зправа по
+            15px знизу 5px <br>
+            padding: 10px 15px 5px; <br>
+          </div>
+          <div class="padding p-4">
+            Анатомія властивості: padding: зверху зправа знизу зліва; <br>
+            приклад запису де padding буде зверху 10px, зправа 15px, знизу
+            12px, зліва 20px <br>
+            padding: 10px 15px 12px 20px; <br>
+          </div>
+          <div class="padding p-t">
+            padding-top: значення; <br>
+            приклад запису де padding буде лише зверху <br>
+            padding-top: 10px; <br>
+          </div>
+          <div class="padding p-r">
+            padding-right: значення; <br>
+            приклад запису де padding буде лише зправа <br>
+            padding-right: 10px; <br>
+          </div>
+          <div class="padding p-b">
+            padding-bottom: значення; <br>
+            приклад запису де padding буде лише знизу <br>
+            padding-bottom: 10px; <br>
+          </div>
+          <div class="padding p-l">
+            padding-left: значення; <br>
+            приклад запису де padding буде лише зліва <br>
+            padding-left: 10px; <br>
+          </div>
+        </div>
+        <div class="margins">
+          <div class="margin">
+            <p class="top-el">
+              Анатомія властивості -- margin: значення; приклад запису де
+              margin взагалі не буде
+            </p>
+            <span></span>
+            <div class="m-property roboto">margin: 0;</div>
+            <span></span>
+            <div class="bottom-el"></div>
+          </div>
+          <div class="margin">
+            <p class="top-el">
+              Анатомія властивості -- margin: з_усіх_сторін; приклад запису де
+              margin буде 10px для усіх сторін
+            </p>
+            <span></span>
+            <div class="m-property roboto m-all">margin: 10px;</div>
+            <span></span>
+            <div class="bottom-el"></div>
+          </div>
+          <div class="margin">
+            <p class="top-el">
+              Анатомія властивості -- margin: зверху_знизу зправа_зліва;
+              приклад запису де margin буде зверху та знизу по 10px а зліва і
+              зправа по 5px
+            </p>
+            <span></span>
+            <div class="m-property roboto m-2">margin: 10px 5px;</div>
+            <span></span>
+            <div class="bottom-el"></div>
+          </div>
+          <div class="margin">
+            <p class="top-el">
+              Анатомія властивості -- margin: зверху зправа_зліва знизу;
+              приклад запису де margin буде зверху 10px а зліва і зправа по
+              15px знизу 5px
+            </p>
+            <span></span>
+            <div class="m-property roboto m-3">margin: 10px 15px 5px;</div>
+            <span></span>
+            <div class="bottom-el"></div>
+          </div>
+          <div class="margin">
+            <p class="top-el">
+              Анатомія властивості -- margin: зверху зправа знизу зліва;
+              приклад запису де margin буде зверху 10px, зправа 15px, знизу
+              12px, зліва 20px
+            </p>
+            <span></span>
+            <div class="m-property roboto m-4">
+              margin: 10px 15px 12px 20px;
+            </div>
+            <span></span>
+            <div class="bottom-el"></div>
+          </div>
+          <div class="margin">
+            <p class="top-el">
+              Анатомія властивості -- margin-top: значення; приклад запису де
+              margin буде лише зверху
+            </p>
+            <span></span>
+            <div class="m-property roboto m-t">margin-top: 10px;</div>
+            <span></span>
+            <div class="bottom-el"></div>
+          </div>
+          <div class="margin">
+            <p class="top-el">
+              Анатомія властивості -- margin-right: значення; приклад запису
+              де margin буде лише зправа
+            </p>
+            <span></span>
+            <div class="m-property roboto m-r">margin-right: 10px;</div>
+            <span></span>
+            <div class="bottom-el"></div>
+          </div>
+          <div class="margin">
+            <p class="top-el">
+              Анатомія властивості -- margin-bottom: значення; приклад запису
+              де margin буде лише знизу
+            </p>
+            <span></span>
+            <div class="m-property roboto m-b">margin-bottom: 10px;</div>
+            <span></span>
+            <div class="bottom-el"></div>
+          </div>
+          <div class="margin">
+            <p class="top-el">
+              Анатомія властивості -- margin-left: значення; приклад запису де
+              margin буде лише зліва
+            </p>
+            <span></span>
+            <div class="m-property roboto m-l">margin-left: 10px;</div>
+            <span></span>
+            <div class="bottom-el"></div>
+          </div>
+        </div>
+        <div class="separator">
+          Властивість `**overflow**` — керує відображенням контенту блочного
+          елементу. **Не успадковується.** <mark>**ВАЖЛИВО!**</mark> Значення
+          властивості: - <mark>***visible***</mark> — відображається увесь
+          контент елемента, навіть за межами встановлених розмірів (за
+          замовченням); - <mark>***hidden***</mark> — відображається тільки
+          контент всередині (блоку) елемента, все інше буде сховано; -
+          <mark>***scroll***</mark> — завжди додаються смужки прокрутки; -
+          <mark>***auto***</mark> — смужки прокрутки додаються лише за
+          необхідністю (якщо контент не вміщується всередині вказаних розмірів
+          блоку).
+        </div>
+      </div>
+      <div class="templates-section">
+        <div class="e-min-bg">
+          <div class="e-min">
+            <div class="e-min-title roboto">
+              Follow products and discounts on Instagram
+            </div>
+            <a class="e-min-gallery" href="https://www.instagram.com/" target="_blank">
+              <div class="gallery-image">
+                <img src="img/e-commerce/card-0.jpg" alt="Дівчина у довгій сукні біжить по вулиці">
+              </div>
+              <div class="gallery-image">
+                <img src="img/e-commerce/card-1.jpg" alt="Маленька стильна коричнева сумочка висить на плечі дівчини">
+              </div>
+              <div class="gallery-image">
+                <img src="img/e-commerce/card-2.jpg" alt="Наручний годинник і браслет одягнені на жіночу руку">
+              </div>
+              <div class="gallery-image">
+                <img src="img/e-commerce/card-3.jpg"
+                  alt="Дівчина в стильному коричневому кардигані та світло-сірих штанях сидить на стільці">
+              </div>
+              <div class="gallery-image">
+                <img src="img/e-commerce/card-4.jpg"
+                  alt="Дівчина у довгій сукні та з сумкою в руці йде по узбережжю водойми">
+              </div>
+              <div class="gallery-image">
+                <img src="img/e-commerce/card-5.jpg" alt="Наручний годинник золотого кольору одягнений на руку">
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="krovato-2-bg">
+          <div class="krovato-2">
+            <div class="blog-article">
+              <h2 class="blog-article-heading heading">
+                Оформлення вітальні. Які м'які меблі краще вибрати?
+              </h2>
+              <img src="img/image-1.jpg"
+                alt="Фото стильної вітальні з вікном, прямим диваном, кріслом, телевізором та меблями" title="Вітальня">
+              <div class="blog-article-text">
+                <p>
+                  Вітальня – це основна кімната у кожному будинку. Саме вона
+                  служить для прийому гостей, проведення часу всією сім'єю та
+                  просто для відпочинку у приємній теплій атмосфері.
+                  Оформляючи свій будинок та вітальню зокрема, всі намагаються
+                  зробити її максимально зручною, комфортною та красивою.
+                  Основним та центральним елементом оформлення вітальні, як і
+                  будь-якої іншої кімнати, є м'які меблі.
+                </p>
+
+                <p>
+                  Будь-які меблі для вітальні повинні бути не тільки стильними
+                  і красивими, але і функціональними. На таких меблів має бути
+                  зручно та приємно відпочивати та приймати гостей. Однак
+                  сьогодні існує величезна різноманітність найрізноманітніших
+                  м'яких меблів для вітальні, яка підходить для кімнат різних
+                  розмірів і форм. На чому варто зупинити свій вибір? Як краще
+                  оформити свою вітальню, щоб вам було комфортно, а гості
+                  хотіли приходити до вас знову та знову?
+                </p>
+                <p class="headline-h4">
+                  На сайті інтернет магазину Кровато представлено велику
+                  різноманітність м'яких меблів для вітальні, серед яких кожен
+                  зможе вибрати для себе найбільш вдалий варіант. У нас ви
+                  знайдете:
+                </p>
+                <ul>
+                  <li>
+                    Прямі дивани. Такі дивани вважаються класикою. Вони
+                    підходять для віталень будь-яких форм та розмірів. Прямий
+                    диван виглядає стильно та лаконічно, на ньому зручно
+                    відпочивати, приймати гостей або навіть спати. Прямі
+                    дивани можуть стояти біля стіни, так і в центрі кімнати.
+                    Багато моделей прямих диванів легко розкладаються,
+                    перетворюючись на повноцінне спальне місце. Також
+                    більшість диванів мають великі та місткі ніші, які є
+                    додатковим місцем для зберігання;
+                  </li>
+                  <li>
+                    Кутові дивани Кутові дивани вважаються найзручнішими та
+                    комфортнішими. Вони ідеально підійдуть для приємного
+                    проведення часу в колі сім'ї або друзів. Кутові дивани в
+                    основному використовуються для оформлення великих
+                    віталень, так як вони займають багато місця, і для кімнат
+                    з невеликою площею просто не підійдуть;
+                  </li>
+                  <li>
+                    Тахти. Тахта - це одна з варіацій дивана, але стильніша і
+                    мінімалістична. Виглядають тахти дуже незвично і можуть
+                    підійти для будь-якого інтер'єру. Також тахти більше ніж
+                    звичайні дивани підходять для сну, оскільки в їх основі не
+                    пружинні блоки, а дерев'яні ламелі або ортопедичні
+                    матраци;
+                  </li>
+                  <li>
+                    Крісла. Крісло – це особливий предмет інтер'єру. Сучасні
+                    дизайнери не часто використовують його, вважаючи
+                    застарілим, проте саме крісла створюють особливий затишок
+                    та комфорт у будь-якій кімнаті. Сьогодні існує величезна
+                    різноманітність класичних та сучасних моделей крісел, що
+                    дозволяє кожному відшукати ідеальне крісло для свого
+                    будинку;
+                  </li>
+                  <li>
+                    Набір меблів. Комплект м'яких меблів – це відмінне рішення
+                    для тих, хто хоче меблювати свою вітальню не лише диваном,
+                    а й кріслами. Існують набори з одним або двома кріслами,
+                    із прямими або кутовими диванами. Основна перевага
+                    будь-якого готового меблевого гарнітура – це те, що
+                    предмети меблів у ньому ідеально поєднуються один з одним,
+                    і вам не потрібно буде витрачати свій час та сили на їхній
+                    підбір.
+                  </li>
+                </ul>
+                <p>
+                  Підбір м'яких меблів для вітальні – це заняття непросте.
+                  Однак при виборі та покупці меблів для своєї вітальні
+                  пам'ятайте, що якісні м'які меблі повинні бути не тільки
+                  красивими, але й зручними для вас і всіх мешканців вашого
+                  будинку.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="krovato-tse-bg">
+          <div class="krovato-tse-wrapper">
+            <h2 class="krovato-tse-title heading">KROVATO це</h2>
+            <div class="krovato-tse-items">
+              <div class="krovato-tse-item">
+                <div class="krovato-tse-content">
+                  <img src="img/icon.png" alt="Іконка якості" class="tse-content-img">
+                  <h3>Власне виробництво</h3>
+                  <p>
+                    Також у нас є своє виробництво, завдяки чому ми можемо
+                    виготовити меблі безпосередньо за Вашими побажаннями:
+                    нестандартний розмір, висота, виготовлення меблів за Вашим
+                    ескізом. Ліжка, тумби, комоди, шафи - все це ми можемо
+                    доопрацювати за Вашим бажанням.
+                  </p>
+                </div>
+              </div>
+              <div class="krovato-tse-item">
+                <div class="krovato-tse-content">
+                  <img src="img/icon.png" alt="Іконка якості" class="tse-content-img">
+                  <h3>Професіонали</h3>
+                  <p>
+                    Наші вироби виготовлені на професійному обладнанні з
+                    ясена, вільхи, бука, дуба, металу та ДСП. Фабрики із
+                    закритим циклом виробництва – контроль якості кожному
+                    етапі: від завезення дерева в цех до складання ліжка в
+                    клієнта.
+                  </p>
+                </div>
+              </div>
+              <div class="krovato-tse-item">
+                <div class="krovato-tse-content">
+                  <img src="img/icon.png" alt="Іконка якості" class="tse-content-img">
+                  <h3>Великий вибір</h3>
+                  <p>
+                    На нашому сайті Ви легко зможете підібрати собі спальню,
+                    вітальню або дитячу кімнату "під ключ". Величезний вибір
+                    матраців, ліжок, а також тумбочок та комодів чекають на
+                    Вас.
+                  </p>
+                </div>
+              </div>
+              <div class="krovato-tse-item">
+                <div class="krovato-tse-content">
+                  <img src="img/icon.png" alt="Іконка якості" class="tse-content-img">
+                  <h3>Контроль якості</h3>
+                  <p>
+                    Наші досвідчені менеджери, з радістю допоможуть підібрати
+                    Вам меблі, які Вас радуватимуть довгі роки. Завдяки
+                    власній службі доставки та збирання, ми підтримуємо
+                    контроль якості від виробництва до клієнта.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">No rights reserved!</footer>
+</body>
+
+</html>
