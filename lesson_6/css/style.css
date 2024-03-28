@@ -29,6 +29,7 @@ body {
 }
 
 .page {
+  width: 100%;
   line-height: 1.2;
 }
 
@@ -513,7 +514,8 @@ body {
 .krovato-2 {
   padding-top: 40px;
   padding-bottom: 40px;
-  width: 1070px;
+  width: 100%;
+  max-width: 1070px;
   margin: 0 auto;
   overflow: hidden;
   font-family: "Proxima Nova", sans-serif;
@@ -564,7 +566,8 @@ body {
   margin-block: 50px;
 }
 .explore {
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
   font-size: 0;
   font-family: "Quicksand", sans-serif;
@@ -636,7 +639,8 @@ body {
 }
 
 .top-main {
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   padding-block: 80px;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
