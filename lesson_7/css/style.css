@@ -674,6 +674,10 @@ body {
   display: inline-block;
 }
 
+.portfolio-contacts li a:hover {
+  text-decoration: underline;
+}
+
 .portfolio-contacts li a::before {
   content: "";
   margin-right: 20px;
