@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Заняття 7</title>
+</head>
+
+<body>
+  <header class="header roboto roboto-it">This is LOGO</header>
+  <main class="page">
+    <div class="wrapper">
+      <p class="title">Заняття 7</p>
+      <p id="target-block">
+        Цій текст з'явився завдяки натисканню на якусь кнопку. Натисніть будь
+        ласка <a href="index.html">сюди</a> , щоб він зник.
+      </p>
+      <h1 class="subtitle">
+        Вивчаємо псевдокласи та псевдоелементи. Псевдокласи стану, псевдокласи
+        положення (присутності) у коді.
+      </h1>
+      <div class="lesson-section">
+        <div class="pseudo-classes">
+          <h3>Анатомія псевдокласів</h3>
+          <p>селектор:псевдоклас { }</p>
+          <p>Вкладеність</p>
+          <p>селектор#1:псевдоклас селектор#2 { }</p>
+          <div class="classes-states">
+            <h3>Псевдокласи стану</h3>
+            <div class="class-hover">
+              <p>
+                Звернення до елемента у стані "при наведенні миші".
+                Застосовується до будь-якого елемента (див. на прикладі
+                кнопки-посилання).
+              </p>
+              <a href="#!" class="class-hover-link btn">:hover</a>
+            </div>
+            <div class="class-active">
+              <p>
+                :active Звернення до елемента у стані "при натиснутій клавіші
+                миші"
+              </p>
+              <a href="#!" class="class-active-link btn">:active</a>
+            </div>
+            <div class="class-visited">
+              <p>
+                :visited Звернення до елемента у стані "відвіданого посилання"
+                (обмежена кількість властивостей)
+              </p>
+              <a href="https://www.google.com/" target="_blank" class="class-visited-link">цю сторінку ти вже колись
+                відвідував...</a>
+            </div>
+            <div class="class-focus">
+              <p>
+                :focus, :focus-visible Звернення до елементу у стані "фокусу".
+                При цьому :focus-visible впливає тільки на об'єкти, на яки був
+                здійснений перехід (зазвичай це перехід при натисканны на
+                клавишу Tab)
+              </p>
+              <a href="#!" class="class-focus-link btn">:focus</a>
+              <a href="#!" class="class-focus-v-link btn">:focus-visible</a>
+            </div>
+            <div class="class-target">
+              <p>
+                :target Звернення до елемента у стані "ефекту від посилання з
+                іншого об'єкту"
+              </p>
+              <a href="#target-block" class="class-target-link btn">Наприклад, звідси.</a>
+            </div>
+          </div>
+          <div class="classes-placements">
+            <h3>Псевдокласи положення у коді</h3>
+            <div class="first-chld">
+              <p>
+                :first-child Звернення до першого дочірнього елементу в коді
+              </p>
+              <ul>
+                <li>
+                  This is item 1 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 2 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 3 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 4 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 5 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+              </ul>
+            </div>
+            <div class="first-type">
+              <p>
+                :first-of-type Звернення до першого вказаного об'єкту в коді
+              </p>
+              <ul>
+                <li>
+                  This is item 1 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 2 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 3 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 4 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 5 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+              </ul>
+            </div>
+            <div class="last-chld">
+              <p>:last-child Звернення до останього елементу в коді</p>
+              <ul>
+                <li>
+                  This is item 1 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 2 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 3 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 4 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 5 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+              </ul>
+            </div>
+            <div class="last-type">
+              <p>
+                :last-of-type Звернення до останього вказаного об'єкту в коді
+              </p>
+              <ul>
+                <li>
+                  This is item 1 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 2 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 3 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 4 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 5 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+              </ul>
+            </div>
+            <div class="nth-chld">
+              <p>
+                :nth-child(значення/алгоритм) Звернення до конкретного
+                елементу в коді <br>odd - через один не парні <br>even -
+                через один парні
+              </p>
+              <ul>
+                <li>
+                  This is item 1 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 2 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 3 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 4 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 5 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 6 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 7 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 8 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 9 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+              </ul>
+            </div>
+            <div class="nth-algorythm">
+              <p>
+                Алгоритм "кожен-через" кожен n + починаючи з, наприклад:
+                <br>
+                :nth-child(3n + 2) {} (кожен третій починаючи з другого)
+              </p>
+              <ul>
+                <li>
+                  This is item 1 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 2 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 3 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 4 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 5 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 6 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 7 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 8 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 9 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 10 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 11 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 12 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+              </ul>
+            </div>
+            <div class="not-selector">
+              <p>:not(селектор або псевдоклас) Псевдоклас виключення</p>
+              <p>
+                наприклад, можна виключити останній margin-bottom для списку
+                <br>:not(:last-child) { margin-bottom: 20px;}
+              </p>
+              <ul>
+                <li>
+                  This is item 1 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 2 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 3 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 4 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 5 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+              </ul>
+            </div>
+            <div class="has-selector">
+              <p>
+                :has(селектор або псевдоклас) Псевдоклас присутності в коді
+              </p>
+              <p>
+                наприклад, якщо всередині списку є тег "span" то для списку
+                буде вказано фоновий колір #0057b8 <br>
+                .has-selector ul:has(span) { background-color: #0057b8; }
+              </p>
+              <ul>
+                <li>
+                  This is item 1 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 2 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 3 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is <span>item 4</span> - Lorem ipsum dolor sit amet
+                  consectetur, adipisicing elit. Amet, et?
+                </li>
+                <li>
+                  This is item 5 - Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Amet, et?
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="pseudo-elements">
+          <h3>Анатомія псевдоелементів</h3>
+          <p>селектор::псевдоелемент{ }</p>
+          <p>
+            Псевдоелементи не можна додати до одинарних тегів(наприклад
+            img,br), тому що ці теги не можуть містити в собі контенту.
+          </p>
+          <p>
+            !!!!! Псевдоелементи - рядкові (але в reset доданий display:
+            inline-block;) !!!!! <br>Властивість content: ""; - Обов'язкова!
+          </p>
+          <div class="pseudo-before-after">
+            <p>
+              ::before { } - додає майже будь що перед елементом; <br>
+              ::after { } - додає майже будь що після елементу.
+            </p>
+            <p>
+              наприклад, можна укласти елемент у дужки, додавши content: "(";
+              та content: ")"; до відповідних псевдоелементів
+            </p>
+            <p class="parentheses">
+              текст з доданими за допомогою псевдоелементів дужками
+            </p>
+            <p>
+              Також можна стилізувати, наприклад, список, додавши до нього
+              іконку списку. А ще можна взаємодіяти з іконками списку під час
+              наведення мишею на пункт списку. <br>
+              &#x2B07;&#x2B07;&#x2B07; дивись приклад &#x2B07;&#x2B07;&#x2B07;
+            </p>
+            <ul>
+              <li>булліт 1 прикладу</li>
+              <li>булліт 2 прикладу</li>
+              <li>булліт 3 прикладу</li>
+              <li>булліт 4 прикладу</li>
+            </ul>
+            <div class="display-hidden">
+              <p class="visible">
+                Ще можна відобразити заздалегідь схований текст при наведенні
+                курсора на тіло блоку.
+              </p>
+              <p class="hidden">щось з'явилось!</p>
+            </div>
+            <p>Ну, а ще можна стилізувати нумерований список на свій смак</p>
+            <ol>
+              <li>булліт 1 прикладу</li>
+              <li>булліт 2 прикладу</li>
+              <li>булліт 3 прикладу</li>
+              <li>булліт 4 прикладу</li>
+            </ol>
+          </div>
+        </div>
+        <p class="game-title">Намагаюсь створити гру "Дійти до кінця".</p>
+        <div class="game">
+          <span>&#x2B07; &nbsp; Розпочинаємо звідси</span>
+          <div class="game-line-1"></div>
+          <div class="game-line-2"></div>
+          <div class="game-line-3"></div>
+          <div class="game-line-4"></div>
+          <div class="game-line-5"></div>
+          <div class="game-line-6"></div>
+          <div class="game-line-7">&#x2B07;</div>
+          <div class="game-bg"></div>
+        </div>
+        <span>наче щось і вийшло...</span>
+      </div>
+      <div class="templates-section">
+        <div class="portfolio">
+          <div class="portfolio-about">
+            <h2 class="portfolio-about-title">About me</h2>
+            <p class="portfolio-about-text">
+              Welcome to the cinematic realm of Jimmy, where creativity meets
+              technology to craft visually stunning narratives. With a passion
+              for storytelling and a keen eye for detail, I embark on a
+              journey to transform ordinary footage into extraordinary visual
+              experiences.
+            </p>
+            <div class="portfolio-about-rollings">
+              <div class="rollings-item">Cash cow editing</div>
+              <div class="rollings-item">Reels editng</div>
+              <div class="rollings-item">logo animation</div>
+              <div class="rollings-item">podcast edit</div>
+            </div>
+          </div>
+          <div class="portfolio-footer">
+            <ul class="portfolio-contacts">
+              <li class="portfolio-tel">
+                <a href="tel:92455478112">+92 455 478 112</a>
+              </li>
+              <li class="portfolio-location">
+                defense phase 3, lahore pakistan
+              </li>
+              <li class="portfolio-mail">
+                <a href="videoeditor@gmail.com">videoeditor@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="krovato-2-bg">
+          <div class="krovato-2">
+            <div class="blog-article">
+              <h2 class="blog-article-heading">
+                Оформлення вітальні. Які м'які меблі краще вибрати?
+              </h2>
+              <img src="img/krovato/image-1.jpg"
+                alt="Фото стильної вітальні з вікном, прямим диваном, кріслом, телевізором та меблями" title="Вітальня">
+              <div class="blog-article-text">
+                <p>
+                  Вітальня – це основна кімната у кожному будинку. Саме вона
+                  служить для прийому гостей, проведення часу всією сім'єю та
+                  просто для відпочинку у приємній теплій атмосфері.
+                  Оформляючи свій будинок та вітальню зокрема, всі намагаються
+                  зробити її максимально зручною, комфортною та красивою.
+                  Основним та центральним елементом оформлення вітальні, як і
+                  будь-якої іншої кімнати, є м'які меблі.
+                </p>
+                <p>
+                  Будь-які меблі для вітальні повинні бути не тільки стильними
+                  і красивими, але і функціональними. На таких меблів має бути
+                  зручно та приємно відпочивати та приймати гостей. Однак
+                  сьогодні існує величезна різноманітність найрізноманітніших
+                  м'яких меблів для вітальні, яка підходить для кімнат різних
+                  розмірів і форм. На чому варто зупинити свій вибір? Як краще
+                  оформити свою вітальню, щоб вам було комфортно, а гості
+                  хотіли приходити до вас знову та знову?
+                </p>
+                <p class="headline-h4">
+                  На сайті інтернет магазину Кровато представлено велику
+                  різноманітність м'яких меблів для вітальні, серед яких кожен
+                  зможе вибрати для себе найбільш вдалий варіант. У нас ви
+                  знайдете:
+                </p>
+                <ul>
+                  <li>
+                    Прямі дивани. Такі дивани вважаються класикою. Вони
+                    підходять для віталень будь-яких форм та розмірів. Прямий
+                    диван виглядає стильно та лаконічно, на ньому зручно
+                    відпочивати, приймати гостей або навіть спати. Прямі
+                    дивани можуть стояти біля стіни, так і в центрі кімнати.
+                    Багато моделей прямих диванів легко розкладаються,
+                    перетворюючись на повноцінне спальне місце. Також
+                    більшість диванів мають великі та місткі ніші, які є
+                    додатковим місцем для зберігання;
+                  </li>
+                  <li>
+                    Кутові дивани Кутові дивани вважаються найзручнішими та
+                    комфортнішими. Вони ідеально підійдуть для приємного
+                    проведення часу в колі сім'ї або друзів. Кутові дивани в
+                    основному використовуються для оформлення великих
+                    віталень, так як вони займають багато місця, і для кімнат
+                    з невеликою площею просто не підійдуть;
+                  </li>
+                  <li>
+                    Тахти. Тахта - це одна з варіацій дивана, але стильніша і
+                    мінімалістична. Виглядають тахти дуже незвично і можуть
+                    підійти для будь-якого інтер'єру. Також тахти більше ніж
+                    звичайні дивани підходять для сну, оскільки в їх основі не
+                    пружинні блоки, а дерев'яні ламелі або ортопедичні
+                    матраци;
+                  </li>
+                  <li>
+                    Крісла. Крісло – це особливий предмет інтер'єру. Сучасні
+                    дизайнери не часто використовують його, вважаючи
+                    застарілим, проте саме крісла створюють особливий затишок
+                    та комфорт у будь-якій кімнаті. Сьогодні існує величезна
+                    різноманітність класичних та сучасних моделей крісел, що
+                    дозволяє кожному відшукати ідеальне крісло для свого
+                    будинку;
+                  </li>
+                  <li>
+                    Набір меблів. Комплект м'яких меблів – це відмінне рішення
+                    для тих, хто хоче меблювати свою вітальню не лише диваном,
+                    а й кріслами. Існують набори з одним або двома кріслами,
+                    із прямими або кутовими диванами. Основна перевага
+                    будь-якого готового меблевого гарнітура – це те, що
+                    предмети меблів у ньому ідеально поєднуються один з одним,
+                    і вам не потрібно буде витрачати свій час та сили на їхній
+                    підбір.
+                  </li>
+                </ul>
+                <p>
+                  Підбір м'яких меблів для вітальні – це заняття непросте.
+                  Однак при виборі та покупці меблів для своєї вітальні
+                  пам'ятайте, що якісні м'які меблі повинні бути не тільки
+                  красивими, але й зручними для вас і всіх мешканців вашого
+                  будинку.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">No rights reserved!</footer>
+</body>
+
+</html>
