@@ -21,20 +21,6 @@ body {
 }
 
 .lesson-name__title {
-  font-family: fantasy;
-  margin-block: 15px;
-  text-align: center;
-  font-size: 46px;
-  font-weight: 700;
-  letter-spacing: 20px;
-  color: rgb(76, 0, 197);
-  text-decoration: underline;
-  text-decoration-color: rgb(132, 0, 255);
-  text-decoration-style: dashed;
-  text-underline-offset: 10px;
-}
-
-.lesson-name__subtitle {
   margin-bottom: 15px;
   text-align: center;
   font-size: 26px;
@@ -45,8 +31,19 @@ body {
   color: rgb(0, 197, 0);
   text-decoration: underline;
   text-decoration-color: rgb(0, 73, 0);
-  text-decoration-style: dotted;
+  text-decoration-style: dashed;
   text-underline-offset: 10px;
+}
+
+.lesson-name__highlight {
+  display: block;
+  font-family: fantasy;
+  font-style: normal;
+  margin-block: 15px;
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: 20px;
+  color: rgb(76, 0, 197);
 }
 
 .footer__text {
