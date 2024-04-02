@@ -23,16 +23,6 @@ body {
 .lesson-name__title {
   margin-bottom: 15px;
   text-align: center;
-  font-size: 26px;
-  font-weight: 500;
-  font-style: italic;
-  text-transform: uppercase;
-  line-height: 2;
-  color: rgb(0, 197, 0);
-  text-decoration: underline;
-  text-decoration-color: rgb(0, 73, 0);
-  text-decoration-style: dashed;
-  text-underline-offset: 10px;
 }
 
 .lesson-name__highlight {
@@ -43,7 +33,24 @@ body {
   font-size: 46px;
   font-weight: 700;
   letter-spacing: 20px;
-  color: rgb(76, 0, 197);
+  color: hsl(263, 100%, 39%);
+  text-decoration: underline;
+  text-decoration-color: hsl(263, 100%, 69%);
+  text-decoration-style: dashed;
+  text-underline-offset: 10px;
+}
+
+.lesson-name__normal {
+  font-size: 26px;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 2;
+  color: hsl(120, 100%, 39%);
+  text-decoration: underline;
+  text-decoration-color: hsl(120, 100%, 19%);
+  text-decoration-style: dotted;
+  text-underline-offset: 10px;
 }
 
 .footer__text {
