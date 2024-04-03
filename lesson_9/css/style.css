@@ -20,8 +20,10 @@ body {
   padding-left: 50px;
 }
 
+.lesson-name {
+  padding-block: 30px;
+}
 .lesson-name__title {
-  margin-bottom: 15px;
   text-align: center;
 }
 
@@ -29,7 +31,7 @@ body {
   display: block;
   font-family: fantasy;
   font-style: normal;
-  margin-block: 15px;
+  padding-bottom: 15px;
   font-size: 46px;
   font-weight: 700;
   letter-spacing: 20px;
