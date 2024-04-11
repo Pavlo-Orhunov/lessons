@@ -1,0 +1,362 @@
+/* ========================= ШРИФТИ =============================== */
+
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* ================================================================ */
+/* Скидання стилів */
+@import url("reset.css");
+
+/* ================================================================ */
+
+body {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 20px;
+  color: #2b2929;
+  background-color: #f8f8f8;
+  line-height: 1.4;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+}
+
+.lesson-name {
+  padding-block: 30px;
+}
+
+.lesson-name__title {
+  text-align: center;
+}
+
+.lesson-name__highlight {
+  display: block;
+  font-family: fantasy;
+  font-style: normal;
+  padding-bottom: 15px;
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: 20px;
+  color: hsl(263, 100%, 39%);
+  text-decoration: underline;
+  text-decoration-color: hsl(263, 100%, 69%);
+  text-decoration-style: dashed;
+  text-underline-offset: 10px;
+}
+
+.lesson-name__normal {
+  font-size: 26px;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 2;
+  color: hsl(120, 100%, 39%);
+  text-decoration: underline;
+  text-decoration-color: hsl(120, 100%, 19%);
+  text-decoration-style: dotted;
+  text-underline-offset: 10px;
+}
+
+.footer__text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 3;
+  letter-spacing: 15px;
+  word-spacing: 20px;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3), -2px -2px 3px red;
+}
+
+/* ------ page styles ------ */
+
+.header {
+}
+
+.header__container {
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
+.header__main {
+  position: relative;
+}
+
+.main-header {
+  padding-block: 27px;
+  background-color: #ffffff;
+}
+
+.main-header__button {
+  position: relative;
+  margin-left: 284px;
+}
+
+.main-header__button::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 22px;
+  background-image: url(../img/header/cross-icon.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 11px 20px 11px 53px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.26;
+  background-color: #ffbc57;
+}
+
+.button:hover {
+  background-color: hsl(36, 100%, 47%);
+}
+
+.header__catalog {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 10px);
+}
+
+#f-catalog {
+  display: none;
+}
+
+#f-catalog:target {
+  display: block;
+}
+
+.header__catalog::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 350px;
+  height: 100%;
+  border-radius: 0 8px 8px 0;
+  background-color: #ffffff;
+}
+
+.catalog {
+  padding-block: 8px;
+  border-radius: 8px 0 0 8px;
+  background-color: #ffffff;
+  max-width: 100%;
+}
+
+.catalog__menu {
+  position: relative;
+}
+
+.catalog__menu::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 100%;
+  width: 5px;
+  height: 100%;
+  background-color: #ffbc57;
+  pointer-events: none;
+}
+
+.menu {
+}
+
+.menu__list {
+  min-width: 300px;
+}
+
+.menu__item {
+  padding: 10px 15px 10px 30px;
+  min-height: 60px;
+}
+
+.menu__link {
+  position: relative;
+  width: 100%;
+  padding-left: 55px;
+  padding-right: 24px;
+  font-weight: 600;
+  line-height: 2;
+}
+
+.menu__item:hover {
+  background-color: #ffbc57;
+}
+
+.menu__item:hover .menu__link::after {
+  background-image: url("../img/header/arrow-right-dark-icon.svg");
+}
+
+.menu__item:hover .menu__sublist {
+  display: block;
+}
+
+.menu__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.menu__link--01::before {
+  background: url("../img/header/catalog/01.svg") 0 0 / 100% auto no-repeat;
+}
+
+.menu__link--02::before {
+  background: url("../img/header/catalog/02.svg") 0 0 / 100% auto no-repeat;
+}
+
+.menu__link--03::before {
+  background: url("../img/header/catalog/03.svg") 0 0 / 100% auto no-repeat;
+}
+
+.menu__link--04::before {
+  background: url("../img/header/catalog/04.svg") 0 0 / 100% auto no-repeat;
+}
+
+.menu__link--05::before {
+  background: url("../img/header/catalog/05.svg") 0 0 / 100% auto no-repeat;
+}
+
+.menu__link--06::before {
+  background: url("../img/header/catalog/06.svg") 0 0 / 100% auto no-repeat;
+}
+
+.menu__link--07::before {
+  background: url("../img/header/catalog/07.svg") 0 0 / 100% auto no-repeat;
+}
+
+.menu__link--08::before {
+  background: url("../img/header/catalog/08.svg") 0 0 / 100% auto no-repeat;
+}
+
+.menu__link--09::before {
+  background: url("../img/header/catalog/09.svg") 0 0 / 100% auto no-repeat;
+}
+
+.menu__link--10::before {
+  background: url("../img/header/catalog/10.svg") 0 0 / 100% auto no-repeat;
+}
+
+.menu__link::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 8px;
+  height: 12px;
+  background: url("../img/header/arrow-right-icon.svg") 0 0 / 100% auto
+    no-repeat;
+}
+
+.menu__sublist {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: -8px;
+  left: 100%;
+  min-width: 350px;
+  height: 100%;
+  padding: 20px 20px 20px 30px;
+  background-color: #ffffff;
+}
+
+.menu__subitem {
+}
+
+.menu__sublink {
+  font-size: 19px;
+  line-height: 2.1;
+  width: 100%;
+}
+
+.menu__sublink:hover {
+  color: #ffbc57;
+}
+
+.page {
+}
+
+.page__popular {
+  margin-top: 800px;
+  margin-bottom: 100px;
+}
+
+.popular {
+}
+
+.popular__container {
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
+.popular__cards {
+}
+
+.popular__card {
+}
+
+.card-popular {
+  position: relative;
+  max-width: 250px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.card-popular__content {
+  font-size: 0;
+  margin-bottom: 73px;
+}
+
+.card-popular__name {
+  width: 50%;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-popular__name:hover {
+  color: #ffbc57;
+}
+
+.card-popular__number {
+  width: 50%;
+  display: inline-block;
+  text-align: right;
+  font-size: 20px;
+  color: #b1b1b1;
+  font-weight: 600;
+}
+
+.card-popular__image {
+  margin-inline: -20px;
+}
+
+.card-popular__image:hover {
+  opacity: 0.75;
+}
+
+.card-popular__image img {
+  width: 100%;
+}
+
+.card-popular__link {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.card-popular__link:hover {
+  bottom: 21px;
+  right: 19px;
+}
