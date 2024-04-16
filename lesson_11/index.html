@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Заняття 11 - Трансформації</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="lesson-name">
+      <h1 class="lesson-name__title">
+        <span class="lesson-name__highlight">Заняття 11:</span><span class="lesson-name__normal">
+          Трансформації. Властивість transform.
+        </span>
+      </h1>
+    </div>
+    <div class="lesson">
+      <div class="lesson__container">
+        <div class="lesson__heading">
+          <p>
+            За допомогою трансформації можна певним чином впливати на елементи
+            сторінки.
+          </p>
+          <p>
+            Задається трансформація властивістю transform та її значеннями.
+            При вказані відсоткових значень відсотки беруться від розміру
+            самого об’єкта.
+          </p>
+          <p class="attn">НЕ ПРАЦЮЄ з рядковими об'єктами!</p>
+        </div>
+        <div class="lesson__d2 d2-transform">
+          <h2 class="title">2D трансформації</h2>
+          <div class="d2-transform__translate">
+            <div class="d2-transform__heading-translate">
+              <p class="highlight">transform: translate(x, y);</p>
+              <p>
+                Зміщує елемент на нове місце відносно початкового положення
+                вправо та вниз через координати X та Y.
+              </p>
+            </div>
+            <div class="d2-transform__box-translate">
+              <div class="outer-box">
+                transform: translate(0, 0);
+                <div class="inner-box">transform: translate(30px, 15px);</div>
+              </div>
+            </div>
+          </div>
+          <div class="d2-transform__scale">
+            <div class="d2-transform__heading-scale">
+              <p>
+                <span class="highlight">transform: scale(x, y);</span> - задає
+                масштабування для елементу по окремої осі X та Y
+              </p>
+              <p>
+                <span class="highlight">transform: scale (n);</span> - (n —
+                значення) задає масштабування однакове для обох осей
+              </p>
+              <p>Масштабує елементи (робить більшими або меншими).</p>
+            </div>
+            <div class="d2-transform__box-scale">
+              <div class="outer-box">
+                transform: scale(1);
+                <div class="inner-box">transform: scale(0.95, 0.8);</div>
+              </div>
+            </div>
+            <p>
+              При застосуванні scale зі значенням більше за 1 для картинок,
+              буде псуватись якість картинки тому щоб уникнути цього варто
+              експортувати картинку трішки більшого розміру та вказувати для
+              неї макетні розміри за допомогою властивості max-width
+            </p>
+            <div class="d2-transform__box-image-scale">
+              <div class="outer-box">
+                <img src="img/scale-image.webp" alt="microprocessor">
+              </div>
+            </div>
+          </div>
+          <div class="d2-transform__rotate">
+            <div class="d2-transform__heading-rotate">
+              <p class="highlight">transform: rotate(deg);</p>
+              <p>
+                Повертає елементи: позитивні значення (20deg) повертають
+                елемент по годинниковій стрілці, негативні - проти
+                годинникової стрілки.
+              </p>
+            </div>
+            <div class="d2-transform__box-rotate">
+              <div class="outer-box">
+                transform: rotate(0);
+                <div class="inner-box">transform: rotate(20deg);</div>
+              </div>
+            </div>
+          </div>
+          <div class="d2-transform__skew">
+            <div class="d2-transform__heading-skew">
+              <p class="highlight">transform: skew(xdeg, ydeg);</p>
+              <p>Нахиляє елементи.</p>
+            </div>
+            <div class="d2-transform__box-skew">
+              <div class="outer-box">
+                transform: skew(0, 0);
+                <div class="inner-box">transform: skew(-10deg, 0deg);</div>
+              </div>
+            </div>
+          </div>
+          <div class="d2-transform__origin">
+            <div class="d2-transform__heading-origin">
+              <p class="highlight">transform-origin: ___ ___;</p>
+              <p>
+                Дозволяє змістити центр трансформації, щодо якого відбувається
+                зміна положення/розміру/форми елемента. Значення може бути
+                відсоткове, піксельне та словесне (top, left, right, bottom)
+              </p>
+            </div>
+            <div class="d2-transform__box-origin">
+              <div class="outer-box">
+                transform: rotate(0);<br>
+                transform-origin: center;
+                <div class="inner-box">
+                  transform: rotate(-15deg);<br>
+                  transform-origin: top right;
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lesson__d3 d3-transform">
+          <h2 class="title">3D трансформації</h2>
+          <p>
+            Переміщення елемента в 3D-просторі. Крім вісей X та Y додається
+            вісь Z. Вісь Z працює лише з `perspective`.
+          </p>
+          <p>
+            `perspective`, `perspective-origin` (перспектива) потрібні для 3D
+            трансформацій. Встановлює глибину та змінює точки початку
+            координат.
+          </p>
+          <p class="attn">Задається батьківському елементу!!!</p>
+          <div class="d3-transform__rotate">
+            <div class="d3-transform__heading-rotate">
+              <p class="highlight">
+                perspective: 400px;<br>
+                perspective-origin: center;<br>
+                transform: rotateX(0);
+              </p>
+              <p>Обертають елемент у 3D-просторі.</p>
+            </div>
+            <div class="d3-transform__box-rotate">
+              <div class="outer-box">
+                perspective: 400px;<br>
+                perspective-origin: center;<br>
+                transform: rotateX(0);
+                <div class="inner-box">
+                  transform: rotateX(45deg);<br>
+                  для елементу
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>
+            <span class="highlight">`backface-visibility`</span>
+            <br>Відображення зворотної сторони об'єкта (напр., ефект
+            повертання картки). `backface-visibility: hidden;` - приховує
+            відображення задньої сторони.
+          </p>
+        </div>
+      </div>
+    </div>
+    <header class="header"></header>
+    <main class="page">
+      <div class="page__car car">
+        <div class="car__container">
+          <p>
+            Це ну типу як автівка. При ховере на коліщатах та фарах є якийсь
+            ефект. При натасканні та утриманні кнопки миші на дверцятах та
+            вікнах якийсь ефект також присутній.
+          </p>
+          <div class="car__body body">
+            <div class="body__front front">
+              <div class="front__bumper"></div>
+              <div class="front__light">
+                <img src="img/main-page/car/2024-ford-ranger-raptor-front-light.webp" alt="Передня фара">
+              </div>
+              <div class="front__grill">
+                <img src="img/main-page/car/2024-ford-ranger-raptor-radiator.webp" alt="Радіаторна решітка">
+              </div>
+              <div class="front__fender"></div>
+              <div class="front__arch arch"></div>
+              <div class="front__light-on"></div>
+            </div>
+            <div class="body__roof"></div>
+            <div class="body__door door door--front">
+              <div class="door__bg-seat"></div>
+              <div class="door__seat door__seat--front"></div>
+              <div class="door__bottom door__bottom--front" title="Натисни і тримай, щоб відкрити двері">
+                <div class="door__handle door__handle--front"></div>
+              </div>
+              <div class="door__top door__top--front"></div>
+              <div class="door__glass door__glass--front" title="Натисни і тримай, щоб відкрити вікно"></div>
+            </div>
+            <div class="body__door door door--rear">
+              <div class="door__seat door__seat--rear"></div>
+              <div class="door__bottom door__bottom--rear" title="Натисни і тримай, щоб відкрити двері">
+                <div class="door__handle door__handle--rear"></div>
+              </div>
+              <div class="door__top door__top--rear"></div>
+              <div class="door__glass door__glass--rear" title="Натисни і тримай, щоб відкрити вікно"></div>
+            </div>
+            <div class="body__trunk trunk">
+              <div class="trunk__bumper"></div>
+              <div class="trunk__light">
+                <img src="img/main-page/car/2024-ford-ranger-raptor-stop-light.webp" alt="stop-light">
+              </div>
+              <div class="trunk__arch arch"></div>
+              <div class="trunk__top"></div>
+            </div>
+            <div class="car__wheels">
+              <div class="car__wheel car__wheel--front">
+                <img src="img/main-page/car/ford-ranger-raptor-2024-wheel.webp" alt="Колесо">
+              </div>
+              <div class="car__wheel car__wheel--rear">
+                <img src="img/main-page/car/ford-ranger-raptor-2024-wheel.webp" alt="Колесо">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <p class="footer__text">Якийсь футер</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

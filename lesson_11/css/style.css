@@ -1,0 +1,734 @@
+/* ========================= ШРИФТИ =============================== */
+
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* ================================================================ */
+/* Скидання стилів */
+@import url("reset.css");
+
+/* ================================================================ */
+
+body {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 20px;
+  color: #2b2929;
+  background-color: #f8f8f8;
+  line-height: 1.4;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+}
+
+.lesson-name {
+  padding-block: 30px;
+}
+
+.lesson-name__title {
+  text-align: center;
+}
+
+.lesson-name__highlight {
+  display: block;
+  font-family: fantasy;
+  font-style: normal;
+  padding-bottom: 15px;
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: 20px;
+  color: hsl(263, 100%, 39%);
+  text-decoration: underline;
+  text-decoration-color: hsl(263, 100%, 69%);
+  text-decoration-style: dashed;
+  text-underline-offset: 10px;
+}
+
+.lesson-name__normal {
+  font-size: 26px;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 2;
+  color: hsl(120, 100%, 39%);
+  text-decoration: underline;
+  text-decoration-color: hsl(120, 100%, 19%);
+  text-decoration-style: dotted;
+  text-underline-offset: 10px;
+}
+
+.footer__text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 3;
+  letter-spacing: 15px;
+  word-spacing: 20px;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3), -2px -2px 3px red;
+}
+
+/* ------------ lesson -------------- */
+.lesson {
+}
+
+.lesson__container {
+  max-width: 1440px;
+  padding-inline: 15px;
+  margin: 0 auto;
+}
+
+.lesson__heading {
+  margin-bottom: 20px;
+}
+
+.attn {
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: chocolate;
+}
+
+.lesson__d2 > * {
+  margin-bottom: 50px;
+}
+
+.d2-transform {
+  padding-bottom: 100px;
+}
+
+.title {
+  padding-block: 10px;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.d2-transform__translate {
+}
+
+.d2-transform__heading-translate {
+  margin-bottom: 15px;
+}
+
+.highlight {
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: darkcyan;
+}
+
+.d2-transform__box-translate {
+}
+
+.outer-box {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  padding-top: 80px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  background-color: #ffd700;
+}
+
+.inner-box {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 200px;
+  padding-top: 80px;
+  color: #ffd700;
+  background-color: #0057b8;
+}
+
+.d2-transform__box-translate .outer-box:hover .inner-box {
+  display: block;
+  transform: translate(30px, 15px);
+}
+
+.d2-transform__scale {
+}
+
+.d2-transform__heading-scale {
+  margin-bottom: 15px;
+}
+
+.d2-transform__box-scale {
+  margin-bottom: 25px;
+}
+
+.d2-transform__box-scale .outer-box:hover .inner-box {
+  display: block;
+  transform: scale(0.95, 0.8);
+}
+
+.d2-transform__box-image-scale .outer-box {
+  padding-top: 0;
+  margin-top: 15px;
+}
+
+.d2-transform__box-image-scale .outer-box img {
+  transform: scale(0.25);
+  transform-origin: 0 0;
+}
+
+.d2-transform__box-image-scale .outer-box:hover img {
+  transform: scale(1);
+  position: relative;
+  z-index: 2;
+  cursor: url("../img/lens.png"), auto;
+}
+
+.d2-transform__rotate {
+}
+
+.d2-transform__heading-rotate {
+  margin-bottom: 15px;
+}
+
+.d2-transform__box-rotate {
+}
+
+.d2-transform__box-rotate .outer-box:hover .inner-box {
+  display: block;
+  transform: rotate(20deg);
+}
+
+.d2-transform__skew {
+}
+
+.d2-transform__heading-skew {
+  margin-bottom: 15px;
+}
+
+.d2-transform__box-skew {
+}
+
+.d2-transform__box-skew .outer-box:hover .inner-box {
+  display: block;
+  transform: skew(-10deg, 0);
+}
+
+.d2-transform__origin {
+}
+
+.d2-transform__heading-origin {
+  margin-bottom: 15px;
+}
+
+.d2-transform__box-origin .outer-box:hover .inner-box {
+  display: block;
+  transform: rotate(-15deg);
+  transform-origin: top right;
+}
+
+.lesson__d2 > *:last-child {
+  margin-bottom: 0px;
+}
+
+/* -------------------------- */
+.lesson__d3 > * {
+  margin-bottom: 50px;
+}
+
+.lesson__d3 {
+}
+
+.d3-transform {
+}
+
+.d3-transform__rotate {
+}
+
+.d3-transform__heading-rotate {
+  margin-bottom: 15px;
+}
+
+.d3-transform__box-rotate {
+}
+
+.d3-transform__box-rotate .outer-box {
+  perspective: 400px;
+  perspective-origin: center;
+  transform: rotateX(0);
+}
+
+.d3-transform__box-rotate .outer-box:hover .inner-box {
+  display: block;
+  transform: rotateX(45deg);
+}
+
+.lesson__d3 > *:last-child {
+  margin-bottom: 0px;
+}
+
+/* -------------------------- */
+.page {
+}
+
+.page__car {
+  background-image: url(../img/main-page/car/bg.webp);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 600px;
+  margin-top: 150px;
+  padding-top: 100px;
+  margin-bottom: 50px;
+}
+
+.car {
+}
+
+.car__container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.car__container p {
+  font-weight: 600;
+}
+.car__body {
+  position: relative;
+}
+
+.body {
+  font-size: 0;
+}
+
+.body__front {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front {
+  position: absolute;
+  top: 200px;
+  left: -300px;
+}
+
+.front__bumper {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  width: 108px;
+  height: 44px;
+  background-color: #2f2d38;
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.front__light {
+  position: relative;
+  z-index: 2;
+  left: 33px;
+  top: -9px;
+  width: 55px;
+}
+
+.front__light img {
+  max-width: 100%;
+}
+
+.front__light-on {
+  opacity: 0;
+  position: relative;
+  z-index: 2;
+  left: -250px;
+  top: -143px;
+  width: 300px;
+  height: 100px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 171, 0, 1) 0%,
+    rgba(247, 252, 0, 1) 35%,
+    rgba(255, 255, 255, 1) 70%
+  );
+  clip-path: polygon(0 24%, 100% 34%, 100% 58%, 0 99%);
+}
+
+.front__light:hover ~ .front__light-on {
+  opacity: 1;
+}
+
+.front__grill {
+  position: relative;
+  z-index: 2;
+  left: 7px;
+  top: -60px;
+  width: 55px;
+}
+
+.front__grill img {
+  max-width: 100%;
+}
+
+.front__fender {
+  position: absolute;
+  top: -26px;
+  left: 10px;
+  width: 292px;
+  height: 125px;
+  background-color: #4a3e30;
+  clip-path: polygon(
+    0 66%,
+    3% 19%,
+    7% 10%,
+    12% 5%,
+    18% 3%,
+    99% 1%,
+    99% 100%,
+    87% 101%,
+    85% 75%,
+    74% 44%,
+    57% 34%,
+    38% 59%,
+    34% 66%
+  );
+}
+
+.front__arch {
+  position: absolute;
+  top: 10px;
+  left: 90px;
+  /* opacity: 0.5; */
+}
+
+.arch {
+}
+
+.body__roof {
+  position: absolute;
+  bottom: -109px;
+  left: -10px;
+  width: 345px;
+  height: 225px;
+  background-color: #4a3e30;
+  /* opacity: 0.8; */
+  clip-path: polygon(
+    0 46%,
+    18% 16%,
+    25% 5%,
+    52% 4%,
+    77% 5%,
+    97% 8%,
+    98% 55%,
+    96% 100%,
+    91% 100%,
+    94% 93%,
+    95% 72%,
+    96% 49%,
+    94% 11%,
+    73% 8%,
+    50% 7%,
+    25% 8%,
+    18% 21%,
+    4% 45%
+  );
+}
+
+.body__door {
+  position: relative;
+  height: auto;
+  /* background-color: rgba(0, 0, 0, 0.274); */
+}
+
+.door {
+  display: inline-block;
+  perspective: 300px;
+  perspective-origin: left;
+}
+
+.door--front {
+  width: 180px;
+}
+
+.door--rear {
+  width: 140px;
+}
+
+.door__seat {
+  position: absolute;
+  top: 50px;
+  width: 180px;
+  height: 130px;
+  background-color: #000000;
+  clip-path: polygon(
+    71% 100%,
+    36% 100%,
+    34% 81%,
+    52% 83%,
+    67% 80%,
+    66% 60%,
+    72% 32%,
+    74% 15%,
+    72% 0,
+    78% 0
+  );
+}
+
+.door__bg-seat {
+  position: absolute;
+  top: 86px;
+  left: -2px;
+  width: 333px;
+  height: 123px;
+  background-color: #332b22;
+}
+
+.door__top {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 90px;
+  background-color: #4a3e30;
+  transition: transform 0.5s ease;
+}
+
+.door__glass {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 90px;
+  background-color: rgba(106, 130, 140, 0.5);
+  transition: transform 0.5s ease;
+}
+
+.door__glass:active {
+  transform: translateY(60px);
+}
+
+.door__bottom {
+  position: absolute;
+  z-index: 2;
+  top: 89px;
+  left: 0;
+  height: 120px;
+  background-color: #4a3e30;
+  transition: transform 0.5s ease;
+}
+
+.door__seat--front {
+  left: 0;
+}
+
+.door__handle {
+  position: absolute;
+  top: 20px;
+  z-index: 3;
+  width: 44px;
+  height: 10px;
+  background-color: hwb(32 19% 78%);
+  clip-path: polygon(
+    7% 0,
+    93% 0,
+    100% 30%,
+    100% 70%,
+    93% 100%,
+    7% 100%,
+    0% 70%,
+    0% 30%
+  );
+}
+
+.door__handle--front {
+  left: 123px;
+}
+
+.door__handle--rear {
+  left: 80px;
+}
+
+.door__bottom--front {
+  width: 180px;
+  clip-path: polygon(4% 100%, 0 92%, 0 0, 100% 0, 100% 100%);
+}
+
+.door__top--front {
+  width: 180px;
+  clip-path: polygon(
+    0 100%,
+    43% 3%,
+    71% 0,
+    100% 0,
+    100% 100%,
+    91% 100%,
+    91% 18%,
+    47% 21%,
+    13% 100%
+  );
+}
+
+.door__glass--front {
+  width: 180px;
+  clip-path: polygon(0 100%, 91% 100%, 91% 18%, 47% 21%, 13% 100%);
+}
+
+.door__seat--rear {
+  left: -40px;
+}
+
+.door__bottom--rear {
+  width: 140px;
+  clip-path: polygon(0 100%, 0 0, 100% 0, 99% 36%, 96% 84%, 88% 100%);
+}
+
+.door__top--rear {
+  width: 140px;
+  clip-path: polygon(
+    0 100%,
+    0 0,
+    54% 3%,
+    96% 8%,
+    100% 100%,
+    78% 100%,
+    89% 88%,
+    87% 22%,
+    55% 17%,
+    10% 16%,
+    10% 100%
+  );
+}
+
+.door__glass--rear {
+  width: 140px;
+  clip-path: polygon(
+    0 100%,
+    78% 100%,
+    94% 88%,
+    91% 17%,
+    55% 13%,
+    6% 11%,
+    6% 100%
+  );
+}
+
+.door__bottom:active ~ div,
+.door__bottom:active {
+  transform: rotateY(-76deg) translateZ(70px);
+  border-right: 8px solid rgb(34, 34, 34);
+}
+
+.body__trunk {
+}
+
+.trunk {
+  display: inline-block;
+  position: relative;
+}
+
+.trunk__top {
+  position: relative;
+  top: 80px;
+  left: 3px;
+  width: 250px;
+  height: 100px;
+  background-color: #4a3e30;
+  clip-path: polygon(
+    0 100%,
+    2% 51%,
+    2% 1%,
+    95% 2%,
+    99% 12%,
+    94% 15%,
+    94% 58%,
+    100% 64%,
+    99% 93%,
+    64% 95%,
+    56% 73%,
+    46% 58%,
+    32% 57%,
+    15% 72%
+  );
+}
+
+.trunk__light {
+  position: absolute;
+  bottom: -45px;
+  right: 0;
+  z-index: 2;
+  width: 20px;
+}
+
+.trunk__light img {
+  max-width: 100%;
+}
+
+.trunk__light:hover {
+  box-shadow: 0px 0px 180px 105px rgba(255, 46, 46, 1);
+}
+
+.trunk__arch {
+  position: relative;
+  z-index: 2;
+  top: 215px;
+}
+
+.arch {
+  width: 180px;
+  height: 90px;
+  overflow: hidden;
+}
+
+.arch::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 180px;
+  border: 20px solid #353340;
+  border-radius: 50%;
+}
+
+.trunk__bumper {
+  position: absolute;
+  top: 261px;
+  right: -10px;
+  width: 100px;
+  height: 40px;
+  background-color: #2f2d38;
+  clip-path: polygon(0% 0%, 96% 0, 100% 33%, 91% 99%, 0% 100%);
+}
+
+.car__wheels {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.car__wheel {
+  width: 130px;
+  height: 130px;
+  background-color: #000000;
+  border-radius: 50%;
+  border: 2px dashed #945e3c;
+  top: 62px;
+  transition: transform 2s ease-in-out;
+}
+
+.car__wheel:hover {
+  transform: rotate(-375deg);
+}
+
+.car__wheel img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60%;
+}
+
+.car__wheel--front {
+  position: absolute;
+  left: -185px;
+}
+
+.car__wheel--rear {
+  position: absolute;
+  right: 325px;
+}
