@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Заняття 12 - Анімації</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="lesson-name">
+      <h1 class="lesson-name__title">
+        <span class="lesson-name__highlight">Заняття 12:</span><span class="lesson-name__normal">
+          Переходи transition та анімації animation.
+        </span>
+      </h1>
+    </div>
+    <div class="lesson">
+      <div class="lesson__container">
+        <div class="lesson__heading">
+          <p>Існують дві групи які відносяться до анімацій:</p>
+          <p>
+            - плавні переходи — властивість `<span class="highlight">transition</span>`;
+          </p>
+          <p>
+            - анімація — властивість `<span class="highlight">animation</span>`.
+          </p>
+        </div>
+        <div class="lesson__transition">
+          <h2 class="title">
+            CSS transition - плавний перехід з одного значення властивості до
+            іншого значення.
+          </h2>
+          <p class="light-title">Існують наступні властивості transition:</p>
+          <div>
+            <p class="highlight">transition-duration: 0.5s; (500ms...)</p>
+            <p>це проміжок часу, за який одне значення переходить в інше</p>
+          </div>
+          <div>
+            <p class="highlight">
+              transition-property: all; (color, transform, width...)
+            </p>
+            <p>
+              це назва CSS-властивостей, до яких буде використано ефект
+              переходу
+            </p>
+          </div>
+          <div>
+            <p class="highlight">transition-delay: 0.5s; (500ms)</p>
+            <p>
+              робить так, щоб зміна відбувалася не миттєво, а з вказаною
+              затримкою
+            </p>
+          </div>
+          <div>
+            <p class="highlight">
+              transition-timing-function: ease; (linear, cubic-bezier...)
+            </p>
+            <p>
+              задає стиль переходу, сценарій, за яким здійснюється анімація
+            </p>
+          </div>
+          <div>
+            <p class="highlight">
+              transition: width 0.8s ease 0s, height 0.5s ease-in 0.8s;
+            </p>
+            <p>
+              це є універсальний запис transition для декількох властивостей
+              одночасно
+            </p>
+          </div>
+        </div>
+        <div class="lesson__animation">
+          <h2 class="title">
+            CSS animation & @keyframes - дозволяє створювати складні сценарії
+            анімацій
+          </h2>
+          <p>
+            Створення анімації базується на ключових кадрах
+            <span class="highlight">@keyframes</span>, які дозволяють
+            автоматично відтворювати та повторювати ефекти протягом заданого
+            часу, а також зупиняти анімацію за певною подією. Анімація може
+            запускатись відразу, як тільки потрапляє в браузер.
+          </p>
+          <p class="light-title">Існують наступні властивості animation:</p>
+          <div>
+            <p class="highlight">
+              animation-name: rolling-items; (назва @keyframes)
+            </p>
+            <p>
+              список анімацій (ключових кадрів - @keyframes), що
+              застосовуються до елемента.
+            </p>
+          </div>
+          <div>
+            <p class="highlight">animation-duration: 1s; (1000ms)</p>
+            <p>встановлює тривалість анімації</p>
+          </div>
+          <div>
+            <p class="highlight">
+              animation-timing-function: linear; (ease-in...)
+            </p>
+            <p>сценарій розвитку анімації між ключовими кадрами</p>
+          </div>
+          <div>
+            <p class="highlight">
+              animation-iteration-count: 1; (infinite — нескінченно)
+            </p>
+            <p>скільки разів програвати анімацію. За замовчуванням 1 раз</p>
+          </div>
+          <div>
+            <p class="highlight">
+              animation-direction: reverse; (normal, reverse, alternate...)
+            </p>
+            <p>напрямок та тип відтворення ключових кадрів</p>
+          </div>
+          <div>
+            <p class="highlight">
+              animation-play-state: paused; (running, paused)
+            </p>
+            <p>дозволяє запускати або зупиняти анімацію за подією</p>
+          </div>
+          <div>
+            <p class="highlight">animation-delay: 0s; (1.5s...)</p>
+            <p>дозволяє зробити затримку перед відтворенням</p>
+          </div>
+          <div>
+            <p class="highlight">animation-fill-mode: forwards; (none...)</p>
+            <p>
+              які значення анімованих css властивостей застосовуються до
+              об'єкта після завершення анімації - none — нічого не
+              використовується; - forwards — коли анімація закінчилась, то
+              засовуються кінцеві властивості (в 100%); - backwards —
+              початкові значення (0%); - both — початкові значення об'єкта +
+              кінцеві значення анімації.
+            </p>
+          </div>
+          <div>
+            <p class="highlight">
+              animation: rolling-items 1s linear 0.2s forwards;
+            </p>
+            <p>
+              це є універсальний запис transition для декількох властивостей
+              одночасно
+            </p>
+            <p>
+              animation-name — rolling-items || animation-duration — 1s ||
+              animation-timing-function — linear || animation-delay — 0.2s ||
+              animation-fill-mode — forwards
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header"></header>
+    <main class="page">
+      <div class="page__car car">
+        <div class="car__container">
+          <p>
+            Це ну типу як автівка. При ховере на коліщатах та фарах є якийсь
+            ефект. При натасканні та утриманні кнопки миші на дверцятах та
+            вікнах якийсь ефект також присутній.
+          </p>
+          <div class="car__body body">
+            <div class="body__front front">
+              <div class="front__bumper"></div>
+              <div class="front__light">
+                <img src="img/main-page/car/2024-ford-ranger-raptor-front-light.webp" alt="Передня фара">
+              </div>
+              <div class="front__grill">
+                <img src="img/main-page/car/2024-ford-ranger-raptor-radiator.webp" alt="Радіаторна решітка">
+              </div>
+              <div class="front__fender"></div>
+              <div class="front__arch arch"></div>
+              <div class="front__light-on"></div>
+            </div>
+            <div class="body__roof"></div>
+            <div class="body__door door door--front">
+              <div class="door__bg-seat"></div>
+              <div class="door__seat door__seat--front"></div>
+              <div class="door__bottom door__bottom--front" title="Натисни і тримай, щоб відкрити двері">
+                <div class="door__handle door__handle--front"></div>
+              </div>
+              <div class="door__top door__top--front"></div>
+              <div class="door__glass door__glass--front" title="Натисни і тримай, щоб відкрити вікно"></div>
+            </div>
+            <div class="body__door door door--rear">
+              <div class="door__seat door__seat--rear"></div>
+              <div class="door__bottom door__bottom--rear" title="Натисни і тримай, щоб відкрити двері">
+                <div class="door__handle door__handle--rear"></div>
+              </div>
+              <div class="door__top door__top--rear"></div>
+              <div class="door__glass door__glass--rear" title="Натисни і тримай, щоб відкрити вікно"></div>
+            </div>
+            <div class="body__trunk trunk">
+              <div class="trunk__bumper"></div>
+              <div class="trunk__light">
+                <img src="img/main-page/car/2024-ford-ranger-raptor-stop-light.webp" alt="stop-light">
+              </div>
+              <div class="trunk__arch arch"></div>
+              <div class="trunk__top"></div>
+            </div>
+            <div class="car__wheels">
+              <div class="car__bounce-box car__bounce-box--front">
+                <div class="car__wheel car__wheel--front">
+                  <img src="img/main-page/car/ford-ranger-raptor-2024-wheel.webp" alt="Колесо">
+                </div>
+              </div>
+              <div class="car__bounce-box car__bounce-box--rear">
+                <div class="car__wheel car__wheel--rear">
+                  <img src="img/main-page/car/ford-ranger-raptor-2024-wheel.webp" alt="Колесо">
+                </div>
+              </div>
+            </div>
+            <div class="flag">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page__back back">
+        <div class="back-line"></div>
+      </div>
+      <div class="page__road road">
+        <div class="road-line"></div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <p class="footer__text">Якийсь футер</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
