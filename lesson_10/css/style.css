@@ -8,6 +8,9 @@
 @import url("reset.css");
 
 /* ================================================================ */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Proxima Nova", sans-serif;
