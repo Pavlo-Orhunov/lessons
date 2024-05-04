@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Заняття 14 - Форми</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="lesson-name">
+      <h1 class="lesson-name__title">
+        <span class="lesson-name__highlight">Заняття 14:</span><span class="lesson-name__normal"> вивчаємо Форми</span>
+      </h1>
+    </div>
+    <header></header>
+    <main class="page">
+      <div class="page__lesson-form lesson-form">
+        <div class="lesson-form__container">
+          <h2 class="lesson-form__title">Вивчаємо елементи форми</h2>
+          <p>
+            Нижче будуть представлені типи елементів для введення даних, які
+            найчастіше використовуються у верстці.
+          </p>
+          <form class="lesson-form__form" action="#" method="post" enctype="multipart/form-data">
+            <div class="checkbox-wrapper">
+              <input class="checkbox" type="checkbox" id="checkbox">
+              <label for="checkbox">Гарний checkbox</label>
+            </div>
+            <div class="radio-wrapper">
+              <div>
+                <input type="radio" checked name="form[radio]" class="radio" id="radio1">
+                <label for="radio1">Гарний radiobutton-1</label>
+              </div>
+              <div>
+                <input type="radio" name="form[radio]" class="radio" id="radio2">
+                <label for="radio2">Гарний radiobutton-2</label>
+              </div>
+            </div>
+            <div class="text-wrapper">
+              <label for="login">Ваше ім'я</label>
+              <input type="text" placeholder="Введіть своє ім'я тут" name="form[]" id="login" value="">
+            </div>
+            <div class="search-wrapper">
+              <label for="search">Ваш запит на пошук</label>
+              <input type="search" placeholder="Введіть ваш запит на пошук" name="form[]" id="search" value="">
+            </div>
+            <div class="password-wrapper">
+              <label for="password">Ваш пароль</label>
+              <input placeholder="******" type="password" name="form[]" id="password">
+            </div>
+            <div class="tel-wrapper">
+              <label for="tel">Ваш номер телефону</label>
+              <input placeholder="+380..." type="tel" name="form[]" id="tel">
+            </div>
+            <div class="num-wrapper">
+              <label for="num">Ваше число</label>
+              <input autocomplete="off" placeholder="Введіть ваше число" name="form[]" type="number" id="num">
+            </div>
+            <div class="area-wrapper">
+              <label for="additional_info">Введіть додаткову інформацію</label>
+              <textarea placeholder="Введіть текст тут" name="form[]" id="additional_info"></textarea>
+            </div>
+            <div class="file-wrapper">
+              <label for="file">Додайте свій файл</label>
+              <input name="form[]" accept="image/png, image/jpeg" multiple type="file" id="file">
+            </div>
+            <div class="range-wrapper">
+              <label for="range">Виберіть значення</label>
+              <input type="range" name="form[]" min="0" max="100" value="30" id="range">
+            </div>
+            <div class="color-wrapper">
+              <label for="color">Виберіть колір</label>
+              <input name="form[]" value="#ffd700" type="color" id="color">
+            </div>
+            <div class="date-wrapper">
+              <label for="selected_date">Виберіть дату</label>
+              <input type="date" name="form[]" id="selected_date">
+            </div>
+            <div class="select-wrapper">
+              <label for="select">Виберіть столицю:</label>
+              <select name="form[]" id="select">
+                <option value="berlin">Берлін, Німеччина</option>
+                <option value="paris">Париж Франція</option>
+                <option value="london">Лондон, Об'єднане Королівство</option>
+                <option selected value="tokyo">Токіо, Японія</option>
+                <option value="washington">Вашингтон, США</option>
+              </select>
+            </div>
+            <div class="buttons">
+              <button class="button" type="submit">Надіслати форму</button>
+              <button class="button" type="reset">Скинути</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="page__order order">
+        <div class="order__container">
+          <form action="#" class="order__form form">
+            <div class="form__info info">
+              <h2 class="info__title title-h2">Інформація про покупця</h2>
+              <div class="info__inputs inputs">
+                <div class="inputs__name">
+                  <input required type="text" name="order[]" placeholder="Прізвище">
+                  <input required type="text" name="order[]" placeholder="Ім’я">
+                  <input required type="text" name="order[]" placeholder="По батькові">
+                </div>
+                <div class="inputs__contacts">
+                  <input required type="tel" name="order[]" placeholder="Контактний телефон">
+                  <input required type="email" name="order[]" placeholder="E-mail"
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                </div>
+              </div>
+              <div class="info__another">
+                <input type="checkbox" name="order[]" value="yes" id="another">
+                <label for="another">Отримуватиме замовлення інша людина</label>
+              </div>
+            </div>
+            <div class="form__delivery delivery">
+              <h2 class="delivery__title title-h2">Вибір способу доставки</h2>
+              <div class="delivery__items">
+                <div class="delivery__item">
+                  <input checked type="radio" name="order[choice]" value="selfpickup" id="selfpickup">
+                  <label for="selfpickup">
+                    <img src="img/main-page/order/self-pickup.webp" alt="check icon">
+                    <span>Самовивіз із магазину</span>
+                    <span>Бесплатно</span>
+                  </label>
+                </div>
+                <div class="delivery__item">
+                  <input type="radio" name="order[choice]" value="newpost" id="newpost">
+                  <label for="newpost">
+                    <img src="img/main-page/order/np.svg" alt="new post icon">
+                    <span>Доставка Нова Пошта</span>
+                    <span>≈ від 500 грн</span>
+                  </label>
+                </div>
+                <div class="delivery__item">
+                  <input type="radio" name="order[choice]" value="courier" id="courier">
+                  <label for="courier">
+                    <img src="img/main-page/order/shop.svg" alt="courier icon">
+                    <span>Доставка кур'єром</span>
+                    <span>≈ від 200 грн</span>
+                  </label>
+                </div>
+              </div>
+              <div class="delivery__address address">
+                <img src="img/main-page/order/location.svg" alt="location icon" class="address__icon">
+                <div class="address__schedule">
+                  <span>Графік роботи: щодня з 9:00 до 18:00 </span>
+                  <span>м. Київ, пров. Ізяславський 52, пов. 2</span>
+                </div>
+                <a href="#!" class="address__button"><span>На мапі</span></a>
+              </div>
+            </div>
+            <div class="form__payment payment">
+              <h2 class="payment__title title-h2">Вибір способу оплати</h2>
+              <div class="payment__items">
+                <div class="payment__item">
+                  <input type="radio" name="order[payment]" id="payment-1">
+                  <label for="payment-1">Готівкою при отриманні (Післясплата)</label>
+                </div>
+                <div class="payment__item">
+                  <input checked type="radio" name="order[payment]" id="payment-2">
+                  <label for="payment-2"><span>Оплата карткою на сайті</span>
+                    <span><img src="img/main-page/order/master-card-logo.svg" alt="mastercard logo"></span>
+                    <span><img src="img/main-page/order/visa-card-logo.svg" alt="visa logo"></span></label>
+                </div>
+                <div class="payment__item">
+                  <input type="radio" name="order[payment]" id="payment-3">
+                  <label for="payment-3"><span>Privat Pay</span>
+                    <span><img src="img/main-page/order/privat-pay-logo.svg" alt="visa logo"></span></label>
+                </div>
+                <div class="payment__item">
+                  <input type="radio" name="order[payment]" id="payment-4">
+                  <label for="payment-4">Кредит від Krovato</label>
+                </div>
+                <div class="payment__item">
+                  <input type="radio" name="order[payment]" id="payment-5">
+                  <label for="payment-5"><span>Оплата частинами ПриватБанк</span>
+                    <span><img src="img/main-page/order/privaty-credit-logo.svg" alt="visa logo"></span></label>
+                </div>
+                <div class="payment__item">
+                  <input type="radio" name="order[payment]" id="payment-6">
+                  <label for="payment-6"><span>Оплата частинами МоноБанк</span>
+                    <span><img src="img/main-page/order/mono-bank-logo.svg" alt="visa logo"></span></label>
+                </div>
+              </div>
+            </div>
+            <div class="form__comment comment">
+              <h2 class="comment__title title-h2">Коментар до замовлення</h2>
+              <textarea placeholder="Ваш коментар" name="order[]"></textarea>
+            </div>
+            <div class="form__submit submit">
+              <button class="submit__button" type="submit">
+                ОФОРМИТИ ЗАМОВЛЕННЯ
+              </button>
+            </div>
+          </form>
+          <div class="order__separation"></div>
+          <div class="order__cart"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <p class="footer__text">Поки все ще якийсь футер</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
