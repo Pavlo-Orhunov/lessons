@@ -508,6 +508,18 @@
   .main-header__bottom {
     align-self: stretch;
   }
+  
+  .icon-burger {
+    order: 3;
+  }
+  
+  .main-header__logo {
+    order: 1;
+  }
+  
+  .main-header__button {
+    order: 2;
+  }
 }
 
 @media (max-width: 479.98px) {
@@ -517,15 +529,5 @@
 
   .main-header__logo img {
     width: auto;
-  }
-
-  .icon-burger {
-    order: 3;
-  }
-  .main-header__logo {
-    order: 1;
-  }
-  .main-header__button {
-    order: 2;
   }
 }
