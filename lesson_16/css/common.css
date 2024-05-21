@@ -1,0 +1,75 @@
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+button:focus-visible {
+  outline: 1px solid hsl(36, 100%, 47%);
+}
+
+/* input:focus:not(:focus-visible) {
+  outline: none;
+} */
+
+/* ------ button ------ */
+.button {
+  padding: 11px 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 19px;
+  line-height: 1.26;
+  background-color: #ffbc57;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+@media (any-hover: hover) {
+  .button:hover {
+    background-color: hsl(36, 100%, 47%);
+  }
+}
+
+.button:active {
+  transform: scale(0.97);
+}
+
+/* ------ heading-block ------ */
+.header-h2 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header-h2__title {
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.header-h2__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffbc57;
+  font-size: 19px;
+  line-height: 1.2;
+  text-decoration: underline 3px;
+  text-decoration-color: rgba(255, 188, 87, 0);
+  text-underline-offset: 8px;
+  transition: text-decoration-color 0.1s ease;
+}
+
+.header-h2__link::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("../img/main-page/most-popular/up-arrow.svg") center no-repeat;
+}
+
+@media (any-hover: hover) {
+  .header-h2__link:hover {
+    transition: text-decoration-color 0.2s ease;
+    text-decoration-color: #ffbc57;
+  }
+}
