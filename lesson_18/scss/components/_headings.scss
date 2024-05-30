@@ -1,0 +1,28 @@
+// Headings
+@use "../abstracts/" as *;
+
+/* Heading */
+.heading {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: clamped(22, 60);
+  font-weight: 700;
+  line-height: 1.166;
+  text-transform: uppercase;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 400px;
+    height: 1px;
+    background: $gradient;
+  }
+  &--center {
+    text-align: center;
+    &::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
