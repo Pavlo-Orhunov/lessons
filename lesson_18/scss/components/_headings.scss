@@ -1,0 +1,41 @@
+// Headings
+@use "../abstracts/" as *;
+
+/* Heading */
+.heading {
+  font-size: clamped(22, 60);
+  font-weight: 700;
+  line-height: 1.166;
+  text-transform: uppercase;
+  & span {
+    position: relative;
+    display: inline-block;
+    padding-bottom: clamped(4, 20);
+    padding-right: clamped(22, 144);
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      height: toRem(1);
+      background: $gradient;
+    }
+  }
+  &--center {
+    text-align: center;
+    & span {
+      padding-inline: clamped(10, 50);
+    }
+  }
+  &--small {
+    font-size: clamped(14, 18);
+    font-weight: 400;
+    line-height: 1.11;
+    letter-spacing: toRem(-0.36);
+    & span {
+      padding-bottom: clamped(4, 10);
+      padding-right: clamped(15, 32);
+    }
+  }
+}

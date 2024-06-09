@@ -1,0 +1,152 @@
+// about
+@use "../abstracts/" as *;
+
+/* about */
+.page {
+  // .page__about
+  &__about {
+  }
+}
+
+.about {
+  scroll-margin-top: toRem(50);
+  padding-block: toRem(120);
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.99) 85.54%
+    ),
+    url("../img/about/bg-about.webp") center / cover no-repeat;
+  @media (max-width: toEm(1200)) {
+    padding-block: toRem(40);
+    scroll-margin-top: toRem(110);
+  }
+  @media (max-width: toEm(600)) {
+    padding-top: 0;
+    padding-bottom: toRem(35);
+    background: none;
+  }
+
+  // .about__container
+  &__container {
+  }
+
+  // .about__content
+  &__content {
+    margin-bottom: toRem(60);
+    display: grid;
+    justify-content: center;
+    gap: toRem(20);
+    @media (max-width: toEm(600)) {
+      margin-bottom: 0;
+    }
+  }
+
+  // .about__title
+  &__title {
+    @media (max-width: toEm(600)) {
+      margin-bottom: 0;
+    }
+    &::after {
+      width: clamped(140, 400);
+      @media (max-width: toEm(600)) {
+        bottom: toRem(-5);
+      }
+    }
+  }
+
+  // .about__text
+  &__text {
+    max-width: toRem(992);
+    text-align: center;
+    letter-spacing: toRem(-0.36);
+    text-transform: capitalize;
+
+    @media (max-width: toEm(600)) {
+      font-size: toRem(14);
+    }
+  }
+
+  // .about__skills
+  /* --- marquee --- */
+  &__skills {
+  }
+}
+
+.skills {
+  // .skills__wrapper
+  &__wrapper {
+    padding-inline: toRem(50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: toEm(600)) {
+      padding: 0;
+    }
+  }
+
+  // .skills__slider
+  &__slider {
+    height: toRem(25);
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    overflow: hidden;
+    &::before,
+    &::after {
+      content: "";
+      height: toRem(25);
+      width: toRem(100);
+      position: absolute;
+      background: rgb(0, 0, 1);
+      background: linear-gradient(
+        90deg,
+        rgba(0, 0, 1, 1) 0%,
+        rgba(0, 0, 1, 0.9) 30%,
+        rgba(0, 0, 1, 0) 100%
+      );
+      z-index: 2;
+    }
+    &::before {
+      left: 0;
+      top: 0;
+    }
+    &::after {
+      right: 0;
+      top: 0;
+      transform: rotate(180deg);
+    }
+    &:hover .skills__slide {
+      animation-play-state: paused;
+    }
+  }
+
+  // .skills__slide
+  &__slide {
+    height: toRem(25);
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    animation: slideshow 10s linear infinite;
+    & li {
+      position: relative;
+      padding-left: clamped(20, 60);
+      padding-right: clamped(30, 70);
+      font-size: toRem(20);
+      font-weight: 500;
+      line-height: 1.25;
+      text-transform: capitalize;
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: toRem(10);
+        height: toRem(10);
+        border-radius: 50%;
+        background: $gradient;
+      }
+    }
+  }
+}
