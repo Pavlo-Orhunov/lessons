@@ -1,0 +1,158 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
+/* Reset  */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+label {
+  display: inline-block;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+/* Global */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Exo", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  color: #232323;
+  background-color: #c7c7c7;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: clip;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*=__container] {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding-inline: 0.9375rem;
+}
+
+/* Heading */
+.title {
+  padding-block: 0.9375rem;
+  font-size: clamp(1.625rem, 1.25rem + 1.67vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Main */
+.page__lesson {
+  padding-bottom: 3.125rem;
+}
+
+.lesson__container > * {
+  margin-bottom: 1.875rem;
+}
+.lesson__container > *:last-child {
+  margin-bottom: 0;
+}
+pre {
+  background-color: #202020;
+  padding: 0.625rem;
+  border-radius: 0.3125rem;
+  color: #ffffff;
+}
+
+code {
+  font-family: Consolas, monospace;
+  line-height: 1.2;
+}
+
+.task__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0000ff;
+}
+.task__answer {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.task__explanation {
+  font-style: italic;
+}
+
+details {
+  padding-top: 0.625rem;
+}

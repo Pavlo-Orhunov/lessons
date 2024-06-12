@@ -1,0 +1,42 @@
+// Functions
+@use "sass:math";
+@use "variables" as *;
+
+// Функція для видалення одиниць виміру
+@function strip-unit($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+// Функція для переведення в rem
+@function toRem($value) {
+  @return $value / 16 + 0rem;
+}
+
+// Функція для переведення в em
+@function toEm($value) {
+  @return $value / 16 + 0em;
+}
+
+// Функція для обчислення значення за допомогою Clamp ()
+@function clamped($min-value, $max-value) {
+  // Переменные с viewport значениями
+  $min-viewport: strip-unit($mobile-min);
+  $max-viewport: strip-unit($container);
+
+  // Розрахунок змінної частини та константів
+  $variable-part: ($max-value - $min-value) / ($max-viewport - $min-viewport);
+  $constant: ($max-value - $max-viewport * $variable-part) / 16;
+
+  // Округлення до потрібної кількості знаків після зап'ятої
+  $constant: round($constant * 1000) / 1000;
+  $variable-part: round($variable-part * 10000) / 100;
+
+  // Результат
+  $result: clamp(
+    #{$min-value / 16}rem,
+    #{$constant}rem + #{$variable-part}vw,
+    #{$max-value / 16}rem
+  );
+
+  @return $result;
+}

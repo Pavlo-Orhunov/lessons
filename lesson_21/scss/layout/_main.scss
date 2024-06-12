@@ -1,0 +1,64 @@
+// Main
+/* Main */
+@use "../abstracts/" as *;
+
+.page {
+  // .page__lesson
+  &__lesson {
+    padding-bottom: toRem(50);
+  }
+}
+
+.lesson {
+  // .lesson__container
+  &__container > * {
+    margin-bottom: toRem(30);
+  }
+
+  &__container > *:last-child {
+    margin-bottom: 0;
+  }
+
+  // .lesson__title
+  &__title {
+  }
+
+  // .lesson__task
+  &__task {
+  }
+}
+
+pre {
+  background-color: #202020;
+  padding: toRem(10);
+  border-radius: toRem(5);
+  color: #ffffff;
+}
+code {
+  font-family: Consolas, monospace;
+  line-height: 1.2;
+}
+
+.task {
+  // .task__title
+  &__title {
+    font-size: toRem(20);
+    font-weight: 700;
+    color: #0000ff;
+  }
+
+  // .task__answer
+  &__answer {
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  // .task__explanation
+  &__explanation {
+    font-style: italic;
+  }
+}
+
+details {
+  padding-top: toRem(10);
+}
