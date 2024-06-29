@@ -1,0 +1,310 @@
+// Card
+@use "../abstracts/" as *;
+
+/* Tags */
+.tags-card {
+  display: flex;
+  flex-direction: column;
+  gap: toRem(10);
+  // .tags-card__tag
+  &__tag {
+    padding: toRem(4) toRem(12);
+    font-size: toRem(12);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-white);
+    &--hot {
+      background-color: var(--color-primary);
+    }
+    &--sale {
+      background-color: var(--color-black);
+    }
+    &--new {
+      color: var(--color-primary);
+      background-color: var(--color-black);
+    }
+  }
+}
+// H T M L
+//
+// <ul class="tags-card">
+//   <li class="tags-card__tag tags-card__tag--hot">hot</li>
+//   <li hidden class="tags-card__tag tags-card__tag--sale">sale</li>
+//   <li class="tags-card__tag tags-card__tag--new">new</li>
+// </ul>
+
+/* Card category */
+.card-category {
+  // .card-category__link
+  &__link {
+    width: 100%;
+    position: relative;
+    @media (any-hover: hover) {
+      &:hover .card-category__footer {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    @media (any-hover: none) {
+      .card-category__footer {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  // .card-category__tags
+  &__tags {
+    position: absolute;
+    top: toRem(22);
+    left: 0;
+  }
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  // .card-category__footer
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: toRem(15);
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-weight: 600;
+    text-transform: capitalize;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    @media (max-width: toEm(600)) {
+      padding: toRem(8);
+    }
+    @media (max-width: toEm(479.98)) {
+      padding: toRem(12);
+    }
+  }
+
+  // .card-category__name
+  &__name {
+  }
+
+  // .card-category__quantity
+  &__quantity {
+    display: flex;
+    gap: toRem(6);
+  }
+
+  // .card-category__number
+  &__number {
+  }
+
+  // .card-category__label
+  &__label {
+  }
+}
+
+// H T M L
+//
+// <ul class="category__cards">
+// <li class="category__card card-category">
+//   <a href="#!" class="card-category__link">
+// <ul class="card-category__tags tags-card">
+//   <li class="tags-card__tag tags-card__tag--hot">hot</li>
+//   <li hidden class="tags-card__tag tags-card__tag--sale">sale</li>
+//   <li class="tags-card__tag tags-card__tag--new">new</li>
+// </ul>
+//     <img
+//       src="img/category/image-1.webp"
+//       alt="Girl in a brown dress goes a fine summer day in car parking"
+//     />
+//     <div class="card-category__footer">
+//       <span class="card-category__name">jacket</span>
+//       <div class="card-category__quantity">
+//         <span class="card-category__number">103</span>
+//         <span class="card-category__label">product</span>
+//       </div>
+//     </div></a
+//   >
+// </li>
+// </ul>
+
+.card-product {
+  display: flex;
+  flex-direction: column;
+  gap: toRem(18);
+  height: 100%;
+  transition: box-shadow 0.2s;
+  @media (any-hover: hover) {
+    &:hover {
+      box-shadow: 0 0 toRem(5) rgba(128, 128, 128, 0.5);
+    }
+  }
+  @media (any-hover: none) {
+    border: toRem(1) solid rgba(128, 128, 128, 0.2);
+  }
+  // .card-product__image
+  &__image {
+    position: relative;
+    @media (any-hover: hover) {
+      &:hover .footer-product {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    @media (any-hover: none) {
+      .footer-product {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  // .card-product__tags
+  &__tags {
+    position: absolute;
+    top: toRem(22);
+    left: 0;
+  }
+
+  // .card-product__name
+  &__name {
+    flex-grow: 1;
+    padding-inline: toRem(10);
+    color: var(--color-dark);
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  // .card-product__details
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    gap: toRem(10);
+    padding-inline: toRem(10);
+  }
+
+  // .card-product__category
+  &__category {
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: capitalize;
+    overflow-x: auto;
+  }
+
+  // .card-product__prices
+  &__prices {
+    display: flex;
+    align-items: center;
+    gap: toRem(12);
+  }
+
+  // .card-product__old-price
+  &__old-price {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: toRem(14);
+    font-weight: 600;
+    text-decoration: line-through;
+    text-transform: capitalize;
+  }
+
+  // .card-product__price
+  &__price {
+    color: var(--color-dark);
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  // .card-product__price--new
+  &__price--new {
+    color: var(--color-primary);
+  }
+
+  // .card-product__footer
+  &__footer {
+  }
+}
+
+.footer-product {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: toRem(15);
+  padding: toRem(15);
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  font-size: toRem(18);
+  color: var(--color-white);
+  background-color: var(--color-black);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  // .footer-product__icons
+  &__icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: toRem(21);
+  }
+
+  // .footer-product__icon
+  &__icon {
+  }
+
+  // .footer-product__button
+  &__button {
+    display: flex;
+    gap: toRem(8);
+    line-height: 1;
+  }
+}
+// H T M L
+//
+// <li class="card-product">
+//   <a href="#!" class="card-product__image">
+//     <img src="img/products/image-02.webp" alt="image" />
+//     <ul class="card-product__tags tags-card">
+//       <li class="tags-card__tag tags-card__tag--hot">hot</li>
+//       <li class="tags-card__tag tags-card__tag--sale">sale</li>
+//       <li class="tags-card__tag tags-card__tag--new">new</li>
+//     </ul>
+//   </a>
+//   <a href="#!" class="card-product__name">Nike Sportswear Futura Luxe</a>
+//   <div class="card-product__details">
+//     <span class="card-product__category">Bag</span>
+//     <div class="card-product__prices">
+//       <span class="card-product__old-price">$220.00</span>
+//       <span class="card-product__price card-product__price--standard card-product__price--new" >$198.00</span>
+//     </div>
+//   </div>
+//   <div class="card-product__footer footer-product">
+//     <div class="footer-product__icons">
+//       <button
+//         type="button"
+//         class="footer-product__icon _icon-favorites"
+//         aria-label="add to favorites"
+//       ></button>
+//       <button
+//         type="button"
+//         class="footer-product__icon _icon-search"
+//         aria-label="open search form"
+//       ></button>
+//     </div>
+//     <a href="#!" class="footer-product__button _icon-cart">shop now</a>
+//   </div>
+// </li>
