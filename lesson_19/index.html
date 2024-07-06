@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Lesson 19 - Semantics</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="favicon.png">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__container">
+          <div class="header__inner">
+            <div class="header__top top-header">
+              <div class="top-header__search">
+                <form action="#">
+                  <input type="search" name="form[]" id="search" value="">
+                  <label for="search" class="_icon-search hover-color" id="search-label"
+                    title="Click to search"></label>
+                  <button type="submit" class="_icon-search hover-color" id="search-button"></button>
+                </form>
+              </div>
+              <div class="top-header__logo">
+                <img src="img/header/logo.svg" alt="CORAL Inc. logo">
+              </div>
+              <div class="top-header__buttons">
+                <button class="top-header__button _icon-user hover-color" type="button" title="Log in or register">
+                  <span>Account</span>
+                </button>
+                <button class="top-header__button _icon-cart hover-color" type="button" title="Open the shopping cart">
+                  <span>Shoping</span>
+                </button>
+              </div>
+              <button type="button" class="icon-menu" aria-label="open menu" aria-controls="menu" aria-expanded="false">
+                <span></span>
+              </button>
+            </div>
+            <div class="header__bottom bottom-header">
+              <div class="bottom-header__menu menu">
+                <nav id="menu" class="menu__body">
+                  <ul class="menu__list">
+                    <li class="menu__item">
+                      <a href="#!" class="menu__link hover-color">Jewelry & Accessories</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#!" class="menu__link hover-color">Clothing & Shoes</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#!" class="menu__link hover-color">Home & Living</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#!" class="menu__link hover-color">Wedding & Party</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#!" class="menu__link hover-color">Toys & Entertainment</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#!" class="menu__link hover-color">Art & Collectibles</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#!" class="menu__link hover-color">Craft Supplies & Tools</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page">
+      <section id="parallax-container-1" class="page__hero hero">
+        <div class="hero__container">
+          <div class="hero__body">
+            <div class="hero__content">
+              <h1 class="hero__title">Collections</h1>
+              <p class="hero__text">
+                you can explore ans shop many differnt collection from various
+                barands here.
+              </p>
+              <div class="hero__button-wrapper">
+                <a href="#!" class="hero__button button _icon-cart">shop now</a>
+              </div>
+            </div>
+            <div class="hero__image">
+              <div class="hero__image-body parallax-item">
+                <img src="img/hero/image.webp" alt="Blonde in white trousers sat down on a chair">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="page__brands brands">
+        <div class="brands__container">
+          <ul class="brands__items">
+            <li class="brands__item">
+              <img src="img/brands/brand-1.webp" alt="graphic studio logo">
+            </li>
+            <li class="brands__item">
+              <img src="img/brands/brand-2.webp" alt="travel lookbook logo">
+            </li>
+            <li class="brands__item">
+              <img src="img/brands/brand-3.webp" alt="golden studio logo">
+            </li>
+            <li class="brands__item">
+              <img src="img/brands/brand-4.webp" alt="guture design logo">
+            </li>
+            <li class="brands__item">
+              <img src="img/brands/brand-5.webp" alt="s.salva art director logo">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="page__category category">
+        <div class="category__container">
+          <h2 class="category__title">Explore new and popular styles</h2>
+          <ul class="category__cards">
+            <li class="category__card card-category">
+              <a href="#!" class="card-category__link" title="Go to the category">
+                <ul class="card-category__tags tags-card">
+                  <li hidden class="tags-card__tag tags-card__tag--hot">
+                    hot
+                  </li>
+                  <li class="tags-card__tag tags-card__tag--sale">sale</li>
+                  <li class="tags-card__tag tags-card__tag--new">new</li>
+                </ul>
+                <img src="img/category/image-1.webp" alt="Girl in a brown dress goes in car parking">
+                <div class="card-category__footer">
+                  <span class="card-category__name">jacket</span>
+                  <div class="card-category__quantity">
+                    <span class="card-category__number">103</span>
+                    <span class="card-category__label">product</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="category__card card-category">
+              <a href="#!" class="card-category__link" title="Go to the category">
+                <ul class="card-category__tags tags-card">
+                  <li class="tags-card__tag tags-card__tag--hot">hot</li>
+                  <li hidden class="tags-card__tag tags-card__tag--sale">
+                    sale
+                  </li>
+                  <li hidden class="tags-card__tag tags-card__tag--new">
+                    new
+                  </li>
+                </ul>
+                <img src="img/category/image-2.webp" alt="A man in a black jacket walking along the street">
+                <div class="card-category__footer">
+                  <span class="card-category__name">jacket</span>
+                  <div class="card-category__quantity">
+                    <span class="card-category__number">103</span>
+                    <span class="card-category__label">product</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="category__card card-category">
+              <a href="#!" class="card-category__link" title="Go to the category">
+                <ul class="card-category__tags tags-card">
+                  <li hidden class="tags-card__tag tags-card__tag--hot">
+                    hot
+                  </li>
+                  <li class="tags-card__tag tags-card__tag--sale">sale</li>
+                  <li hidden class="tags-card__tag tags-card__tag--new">
+                    new
+                  </li>
+                </ul>
+                <img src="img/category/image-3.webp" alt="A young blonde in a gray-white dress">
+                <div class="card-category__footer">
+                  <span class="card-category__name">jacket</span>
+                  <div class="card-category__quantity">
+                    <span class="card-category__number">103</span>
+                    <span class="card-category__label">product</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="category__card card-category">
+              <a href="#!" class="card-category__link" title="Go to the category">
+                <ul class="card-category__tags tags-card">
+                  <li hidden class="tags-card__tag tags-card__tag--hot">
+                    hot
+                  </li>
+                  <li hidden class="tags-card__tag tags-card__tag--sale">
+                    sale
+                  </li>
+                  <li class="tags-card__tag tags-card__tag--new">new</li>
+                </ul>
+                <img src="img/category/image-4.webp" alt="A dark-skinned woman poses on a light gray background">
+                <div class="card-category__footer">
+                  <span class="card-category__name">jacket</span>
+                  <div class="card-category__quantity">
+                    <span class="card-category__number">103</span>
+                    <span class="card-category__label">product</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="category__card card-category">
+              <a href="#!" class="card-category__link" title="Go to the category">
+                <ul class="card-category__tags tags-card">
+                  <li class="tags-card__tag tags-card__tag--hot">hot</li>
+                  <li hidden class="tags-card__tag tags-card__tag--sale">
+                    sale
+                  </li>
+                  <li class="tags-card__tag tags-card__tag--new">new</li>
+                </ul>
+                <img src="img/category/image-5.webp" alt="A young man in a white T -shirt and a black jacket">
+                <div class="card-category__footer">
+                  <span class="card-category__name">jacket</span>
+                  <div class="card-category__quantity">
+                    <span class="card-category__number">103</span>
+                    <span class="card-category__label">product</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="page__products products">
+        <div class="products__container has-all-button-tabs-1">
+          <h2 data-animated class="products__title title">
+            explore our products
+          </h2>
+          <div class="products__filter">
+            <div class="products__tab-buttons tab-navigation">
+              <button data-tab-type="" type="button" class="tab-button hover-color _active">
+                all products
+              </button>
+              <button data-tab-type="shirt" type="button" class="tab-button hover-color">
+                t-shirt
+              </button>
+              <button data-tab-type="hoodies" type="button" class="tab-button hover-color">
+                hoodies
+              </button>
+              <button data-tab-type="jacket" type="button" class="tab-button hover-color">
+                jacket
+              </button>
+            </div>
+            <button type="button" class="products__filter-button button button--small _icon-filter">
+              filter
+            </button>
+          </div>
+          <ul class="products__cards tab-items">
+            <li data-tab-type="jacket" class="tab-item">
+              <article class="products__card card-product">
+                <div class="card-product__image">
+                  <a href="#!">
+                    <img src="img/products/image-01.webp" alt="image">
+                    <ul class="card-product__tags tags-card">
+                      <li hidden class="tags-card__tag tags-card__tag--hot">
+                        hot
+                      </li>
+                      <li hidden class="tags-card__tag tags-card__tag--sale">
+                        sale
+                      </li>
+                      <li class="tags-card__tag tags-card__tag--new">new</li>
+                    </ul>
+                  </a>
+                  <div class="card-product__footer footer-product">
+                    <div class="footer-product__icons">
+                      <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                        aria-label="add to favorites"></button>
+                      <button type="button" class="footer-product__icon hover-color _icon-search"
+                        aria-label="open search form"></button>
+                    </div>
+                    <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                  </div>
+                </div>
+                <a href="#!" class="card-product__name hover-color">
+                  <h3>Adicolor Classics Joggers</h3>
+                </a>
+                <div class="card-product__details">
+                  <span class="card-product__category">Dress</span>
+                  <div class="card-product__prices">
+                    <span hidden class="card-product__old-price">$220.00</span>
+                    <span class="card-product__price">$63.85</span>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li data-tab-type="hoodies" class="tab-item">
+              <article class="products__card card-product">
+                <div class="card-product__image">
+                  <a href="#!">
+                    <img src="img/products/image-02.webp" alt="image">
+                    <ul class="card-product__tags tags-card">
+                      <li class="tags-card__tag tags-card__tag--hot">hot</li>
+                      <li hidden class="tags-card__tag tags-card__tag--sale">
+                        sale
+                      </li>
+                      <li hidden class="tags-card__tag tags-card__tag--new">
+                        new
+                      </li>
+                    </ul>
+                  </a>
+                  <div class="card-product__footer footer-product">
+                    <div class="footer-product__icons">
+                      <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                        aria-label="add to favorites"></button>
+                      <button type="button" class="footer-product__icon hover-color _icon-search"
+                        aria-label="open search form"></button>
+                    </div>
+                    <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                  </div>
+                </div>
+                <a href="#!" class="card-product__name hover-color">
+                  <h3>Nike Sportswear Futura Luxe</h3>
+                </a>
+                <div class="card-product__details">
+                  <span class="card-product__category">Bag</span>
+                  <div class="card-product__prices">
+                    <span hidden class="card-product__old-price">$220.00</span>
+                    <span class="card-product__price">$130.00</span>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li data-tab-type="shirt" class="tab-item">
+              <article class="products__card card-product">
+                <div class="card-product__image">
+                  <a href="#!">
+                    <img src="img/products/image-03.webp" alt="image">
+                    <ul class="card-product__tags tags-card">
+                      <li hidden class="tags-card__tag tags-card__tag--hot">
+                        hot
+                      </li>
+                      <li hidden class="tags-card__tag tags-card__tag--sale">
+                        sale
+                      </li>
+                      <li hidden class="tags-card__tag tags-card__tag--new">
+                        new
+                      </li>
+                    </ul>
+                  </a>
+                  <div class="card-product__footer footer-product">
+                    <div class="footer-product__icons">
+                      <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                        aria-label="add to favorites"></button>
+                      <button type="button" class="footer-product__icon hover-color _icon-search"
+                        aria-label="open search form"></button>
+                    </div>
+                    <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                  </div>
+                </div>
+                <a href="#!" class="card-product__name hover-color">
+                  <h3>Geometric print Scarf</h3>
+                </a>
+                <div class="card-product__details">
+                  <span class="card-product__category">scarf</span>
+                  <div class="card-product__prices">
+                    <span hidden class="card-product__old-price">$220.00</span>
+                    <span class="card-product__price">$53.00</span>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li data-tab-type="hoodies" class="tab-item">
+              <article class="products__card card-product">
+                <div class="card-product__image">
+                  <a href="#!">
+                    <img src="img/products/image-04.webp" alt="image">
+                    <ul class="card-product__tags tags-card">
+                      <li hidden class="tags-card__tag tags-card__tag--hot">
+                        hot
+                      </li>
+                      <li class="tags-card__tag tags-card__tag--sale">
+                        sale
+                      </li>
+                      <li hidden class="tags-card__tag tags-card__tag--new">
+                        new
+                      </li>
+                    </ul>
+                  </a>
+                  <div class="card-product__footer footer-product">
+                    <div class="footer-product__icons">
+                      <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                        aria-label="add to favorites"></button>
+                      <button type="button" class="footer-product__icon hover-color _icon-search"
+                        aria-label="open search form"></button>
+                    </div>
+                    <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                  </div>
+                </div>
+                <a href="#!" class="card-product__name hover-color">
+                  <h3>Yellow Reserved Hoodie</h3>
+                </a>
+                <div class="card-product__details">
+                  <span class="card-product__category">Dress</span>
+                  <div class="card-product__prices">
+                    <span class="card-product__old-price">$364.00</span>
+                    <span class="card-product__price card-product__price--new">$155.00</span>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li data-tab-type="jacket" class="tab-item">
+              <article class="products__card card-product">
+                <div class="card-product__image">
+                  <a href="#!">
+                    <img src="img/products/image-05.webp" alt="image">
+                    <ul class="card-product__tags tags-card">
+                      <li class="tags-card__tag tags-card__tag--hot">hot</li>
+                      <li class="tags-card__tag tags-card__tag--sale">
+                        sale
+                      </li>
+                      <li class="tags-card__tag tags-card__tag--new">new</li>
+                    </ul>
+                  </a>
+                  <div class="card-product__footer footer-product">
+                    <div class="footer-product__icons">
+                      <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                        aria-label="add to favorites"></button>
+                      <button type="button" class="footer-product__icon hover-color _icon-search"
+                        aria-label="open search form"></button>
+                    </div>
+                    <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                  </div>
+                </div>
+                <a href="#!" class="card-product__name hover-color">
+                  <h3>Nike Sportswear Futura Luxe</h3>
+                </a>
+                <div class="card-product__details">
+                  <span class="card-product__category">Bag</span>
+                  <div class="card-product__prices">
+                    <span class="card-product__old-price">$220.00</span>
+                    <span class="card-product__price card-product__price--new">$198.00</span>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li data-tab-type="hoodies" class="tab-item">
+              <article class="products__card card-product">
+                <div class="card-product__image">
+                  <a href="#!">
+                    <img src="img/products/image-06.webp" alt="image">
+                    <ul class="card-product__tags tags-card">
+                      <li class="tags-card__tag tags-card__tag--hot">hot</li>
+                      <li class="tags-card__tag tags-card__tag--sale">
+                        sale
+                      </li>
+                      <li class="tags-card__tag tags-card__tag--new">new</li>
+                    </ul>
+                  </a>
+                  <div class="card-product__footer footer-product">
+                    <div class="footer-product__icons">
+                      <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                        aria-label="add to favorites"></button>
+                      <button type="button" class="footer-product__icon hover-color _icon-search"
+                        aria-label="open search form"></button>
+                    </div>
+                    <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                  </div>
+                </div>
+                <a href="#!" class="card-product__name hover-color">
+                  <h3>Nike Sportswear Futura Luxe</h3>
+                </a>
+                <div class="card-product__details">
+                  <span class="card-product__category">Bag</span>
+                  <div class="card-product__prices">
+                    <span class="card-product__old-price">$220.00</span>
+                    <span class="card-product__price card-product__price--new">$198.00</span>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li data-tab-type="shirt" class="tab-item">
+              <article class="products__card card-product">
+                <div class="card-product__image">
+                  <a href="#!">
+                    <img src="img/products/image-07.webp" alt="image">
+                    <ul class="card-product__tags tags-card">
+                      <li class="tags-card__tag tags-card__tag--hot">hot</li>
+                      <li class="tags-card__tag tags-card__tag--sale">
+                        sale
+                      </li>
+                      <li class="tags-card__tag tags-card__tag--new">new</li>
+                    </ul>
+                  </a>
+                  <div class="card-product__footer footer-product">
+                    <div class="footer-product__icons">
+                      <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                        aria-label="add to favorites"></button>
+                      <button type="button" class="footer-product__icon hover-color _icon-search"
+                        aria-label="open search form"></button>
+                    </div>
+                    <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                  </div>
+                </div>
+                <a href="#!" class="card-product__name hover-color">
+                  <h3>Nike Sportswear Futura Luxe</h3>
+                </a>
+                <div class="card-product__details">
+                  <span class="card-product__category">Bag</span>
+                  <div class="card-product__prices">
+                    <span class="card-product__old-price">$220.00</span>
+                    <span class="card-product__price card-product__price--new">$198.00</span>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li data-tab-type="jacket" class="tab-item">
+              <article class="products__card card-product">
+                <div class="card-product__image">
+                  <a href="#!">
+                    <img src="img/products/image-08.webp" alt="image">
+                    <ul class="card-product__tags tags-card">
+                      <li class="tags-card__tag tags-card__tag--hot">hot</li>
+                      <li class="tags-card__tag tags-card__tag--sale">
+                        sale
+                      </li>
+                      <li class="tags-card__tag tags-card__tag--new">new</li>
+                    </ul>
+                  </a>
+                  <div class="card-product__footer footer-product">
+                    <div class="footer-product__icons">
+                      <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                        aria-label="add to favorites"></button>
+                      <button type="button" class="footer-product__icon hover-color _icon-search"
+                        aria-label="open search form"></button>
+                    </div>
+                    <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                  </div>
+                </div>
+                <a href="#!" class="card-product__name hover-color">
+                  <h3>Nike Sportswear Futura Luxe</h3>
+                </a>
+                <div class="card-product__details">
+                  <span class="card-product__category">Bag</span>
+                  <div class="card-product__prices">
+                    <span class="card-product__old-price">$220.00</span>
+                    <span class="card-product__price card-product__price--new">$198.00</span>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div id="parallax-container-2" class="page__collection collection">
+        <div class="collection__container">
+          <div class="collection__image">
+            <img class="parallax-item" src="img/collection/girl.webp" alt="girl in red dress">
+          </div>
+          <div class="collection__content-wrapper">
+            <div class="collection__content">
+              <div data-animated class="collection__logo">
+                <img src="img/collection/logo.webp" alt="zara logo">
+              </div>
+              <p class="collection__text">
+                Lustrous yet understated. The new evening wear collection
+                exclusively offered at the reopened Giorgio Armani boutique in
+                Los Angeles.
+              </p>
+              <div data-animated class="collection__button-wrapper">
+                <a href="#!" class="collection__button button button--light">see collection</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="page__slider slider">
+        <div class="slider__container has-all-button-tabs-2">
+          <h2 data-animated class="slider__title title">Best sellers</h2>
+          <div class="slider__filter">
+            <div class="slider__tab-buttons tab-navigation">
+              <button data-tab-type="" type="button" class="tab-button hover-color _active">
+                all products
+              </button>
+              <button data-tab-type="shirt" type="button" class="tab-button hover-color">
+                t-shirt
+              </button>
+              <button data-tab-type="hoodies" type="button" class="tab-button hover-color">
+                hoodies
+              </button>
+              <button data-tab-type="jacket" type="button" class="tab-button hover-color">
+                jacket
+              </button>
+            </div>
+            <button type="button" class="slider__show-button button button--small">
+              show all
+            </button>
+          </div>
+          <div class="slider__swiper">
+            <ul class="slider__cards tab-items swiper-wrapper">
+              <li data-tab-type="jacket" class="tab-item swiper-slide">
+                <article class="slider__card card-product">
+                  <div class="card-product__image">
+                    <a href="#!">
+                      <img src="img/products/image-01.webp" alt="image">
+                      <ul class="card-product__tags tags-card">
+                        <li hidden class="tags-card__tag tags-card__tag--hot">
+                          hot
+                        </li>
+                        <li hidden class="tags-card__tag tags-card__tag--sale">
+                          sale
+                        </li>
+                        <li class="tags-card__tag tags-card__tag--new">
+                          new
+                        </li>
+                      </ul>
+                    </a>
+                    <div class="card-product__footer footer-product">
+                      <div class="footer-product__icons">
+                        <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                          aria-label="add to favorites"></button>
+                        <button type="button" class="footer-product__icon hover-color _icon-search"
+                          aria-label="open search form"></button>
+                      </div>
+                      <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                    </div>
+                  </div>
+                  <a href="#!" class="card-product__name hover-color">
+                    <h3>Adicolor Classics Joggers</h3>
+                  </a>
+                  <div class="card-product__details">
+                    <span class="card-product__category">Dress</span>
+                    <div class="card-product__prices">
+                      <span hidden class="card-product__old-price">$220.00</span>
+                      <span class="card-product__price">$63.85</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li data-tab-type="hoodies" class="tab-item swiper-slide">
+                <article class="slider__card card-product">
+                  <div class="card-product__image">
+                    <a href="#!">
+                      <img src="img/products/image-02.webp" alt="image">
+                      <ul class="card-product__tags tags-card">
+                        <li class="tags-card__tag tags-card__tag--hot">
+                          hot
+                        </li>
+                        <li hidden class="tags-card__tag tags-card__tag--sale">
+                          sale
+                        </li>
+                        <li hidden class="tags-card__tag tags-card__tag--new">
+                          new
+                        </li>
+                      </ul>
+                    </a>
+                    <div class="card-product__footer footer-product">
+                      <div class="footer-product__icons">
+                        <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                          aria-label="add to favorites"></button>
+                        <button type="button" class="footer-product__icon hover-color _icon-search"
+                          aria-label="open search form"></button>
+                      </div>
+                      <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                    </div>
+                  </div>
+                  <a href="#!" class="card-product__name hover-color">
+                    <h3>Nike Sportswear Futura Luxe</h3>
+                  </a>
+                  <div class="card-product__details">
+                    <span class="card-product__category">Bag</span>
+                    <div class="card-product__prices">
+                      <span hidden class="card-product__old-price">$220.00</span>
+                      <span class="card-product__price">$130.00</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li data-tab-type="shirt" class="tab-item swiper-slide">
+                <article class="slider__card card-product">
+                  <div class="card-product__image">
+                    <a href="#!">
+                      <img src="img/products/image-03.webp" alt="image">
+                      <ul class="card-product__tags tags-card">
+                        <li hidden class="tags-card__tag tags-card__tag--hot">
+                          hot
+                        </li>
+                        <li hidden class="tags-card__tag tags-card__tag--sale">
+                          sale
+                        </li>
+                        <li hidden class="tags-card__tag tags-card__tag--new">
+                          new
+                        </li>
+                      </ul>
+                    </a>
+                    <div class="card-product__footer footer-product">
+                      <div class="footer-product__icons">
+                        <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                          aria-label="add to favorites"></button>
+                        <button type="button" class="footer-product__icon hover-color _icon-search"
+                          aria-label="open search form"></button>
+                      </div>
+                      <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                    </div>
+                  </div>
+                  <a href="#!" class="card-product__name hover-color">
+                    <h3>Geometric print Scarf</h3>
+                  </a>
+                  <div class="card-product__details">
+                    <span class="card-product__category">scarf</span>
+                    <div class="card-product__prices">
+                      <span hidden class="card-product__old-price">$220.00</span>
+                      <span class="card-product__price">$53.00</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li data-tab-type="hoodies" class="tab-item swiper-slide">
+                <article class="slider__card card-product">
+                  <div class="card-product__image">
+                    <a href="#!">
+                      <img src="img/products/image-04.webp" alt="image">
+                      <ul class="card-product__tags tags-card">
+                        <li hidden class="tags-card__tag tags-card__tag--hot">
+                          hot
+                        </li>
+                        <li class="tags-card__tag tags-card__tag--sale">
+                          sale
+                        </li>
+                        <li hidden class="tags-card__tag tags-card__tag--new">
+                          new
+                        </li>
+                      </ul>
+                    </a>
+                    <div class="card-product__footer footer-product">
+                      <div class="footer-product__icons">
+                        <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                          aria-label="add to favorites"></button>
+                        <button type="button" class="footer-product__icon hover-color _icon-search"
+                          aria-label="open search form"></button>
+                      </div>
+                      <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                    </div>
+                  </div>
+                  <a href="#!" class="card-product__name hover-color">
+                    <h3>Yellow Reserved Hoodie</h3>
+                  </a>
+                  <div class="card-product__details">
+                    <span class="card-product__category">Dress</span>
+                    <div class="card-product__prices">
+                      <span class="card-product__old-price">$364.00</span>
+                      <span class="card-product__price card-product__price--new">$155.00</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li data-tab-type="jacket" class="tab-item swiper-slide">
+                <article class="slider__card card-product">
+                  <div class="card-product__image">
+                    <a href="#!">
+                      <img src="img/products/image-05.webp" alt="image">
+                      <ul class="card-product__tags tags-card">
+                        <li class="tags-card__tag tags-card__tag--hot">
+                          hot
+                        </li>
+                        <li class="tags-card__tag tags-card__tag--sale">
+                          sale
+                        </li>
+                        <li class="tags-card__tag tags-card__tag--new">
+                          new
+                        </li>
+                      </ul>
+                    </a>
+                    <div class="card-product__footer footer-product">
+                      <div class="footer-product__icons">
+                        <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                          aria-label="add to favorites"></button>
+                        <button type="button" class="footer-product__icon hover-color _icon-search"
+                          aria-label="open search form"></button>
+                      </div>
+                      <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                    </div>
+                  </div>
+                  <a href="#!" class="card-product__name hover-color">
+                    <h3>Nike Sportswear Futura Luxe</h3>
+                  </a>
+                  <div class="card-product__details">
+                    <span class="card-product__category">Bag</span>
+                    <div class="card-product__prices">
+                      <span class="card-product__old-price">$220.00</span>
+                      <span class="card-product__price card-product__price--new">$198.00</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li data-tab-type="hoodies" class="tab-item swiper-slide">
+                <article class="slider__card card-product">
+                  <div class="card-product__image">
+                    <a href="#!">
+                      <img src="img/products/image-06.webp" alt="image">
+                      <ul class="card-product__tags tags-card">
+                        <li class="tags-card__tag tags-card__tag--hot">
+                          hot
+                        </li>
+                        <li class="tags-card__tag tags-card__tag--sale">
+                          sale
+                        </li>
+                        <li class="tags-card__tag tags-card__tag--new">
+                          new
+                        </li>
+                      </ul>
+                    </a>
+                    <div class="card-product__footer footer-product">
+                      <div class="footer-product__icons">
+                        <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                          aria-label="add to favorites"></button>
+                        <button type="button" class="footer-product__icon hover-color _icon-search"
+                          aria-label="open search form"></button>
+                      </div>
+                      <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                    </div>
+                  </div>
+                  <a href="#!" class="card-product__name hover-color">
+                    <h3>Nike Sportswear Futura Luxe</h3>
+                  </a>
+                  <div class="card-product__details">
+                    <span class="card-product__category">Bag</span>
+                    <div class="card-product__prices">
+                      <span class="card-product__old-price">$220.00</span>
+                      <span class="card-product__price card-product__price--new">$198.00</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li data-tab-type="shirt" class="tab-item swiper-slide">
+                <article class="slider__card card-product">
+                  <div class="card-product__image">
+                    <a href="#!">
+                      <img src="img/products/image-07.webp" alt="image">
+                      <ul class="card-product__tags tags-card">
+                        <li class="tags-card__tag tags-card__tag--hot">
+                          hot
+                        </li>
+                        <li class="tags-card__tag tags-card__tag--sale">
+                          sale
+                        </li>
+                        <li class="tags-card__tag tags-card__tag--new">
+                          new
+                        </li>
+                      </ul>
+                    </a>
+                    <div class="card-product__footer footer-product">
+                      <div class="footer-product__icons">
+                        <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                          aria-label="add to favorites"></button>
+                        <button type="button" class="footer-product__icon hover-color _icon-search"
+                          aria-label="open search form"></button>
+                      </div>
+                      <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                    </div>
+                  </div>
+                  <a href="#!" class="card-product__name hover-color">
+                    <h3>Nike Sportswear Futura Luxe</h3>
+                  </a>
+                  <div class="card-product__details">
+                    <span class="card-product__category">Bag</span>
+                    <div class="card-product__prices">
+                      <span class="card-product__old-price">$220.00</span>
+                      <span class="card-product__price card-product__price--new">$198.00</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li data-tab-type="jacket" class="tab-item swiper-slide">
+                <article class="slider__card card-product">
+                  <div class="card-product__image">
+                    <a href="#!">
+                      <img src="img/products/image-08.webp" alt="image">
+                      <ul class="card-product__tags tags-card">
+                        <li class="tags-card__tag tags-card__tag--hot">
+                          hot
+                        </li>
+                        <li class="tags-card__tag tags-card__tag--sale">
+                          sale
+                        </li>
+                        <li class="tags-card__tag tags-card__tag--new">
+                          new
+                        </li>
+                      </ul>
+                    </a>
+                    <div class="card-product__footer footer-product">
+                      <div class="footer-product__icons">
+                        <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                          aria-label="add to favorites"></button>
+                        <button type="button" class="footer-product__icon hover-color _icon-search"
+                          aria-label="open search form"></button>
+                      </div>
+                      <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                    </div>
+                  </div>
+                  <a href="#!" class="card-product__name hover-color">
+                    <h3>Nike Sportswear Futura Luxe</h3>
+                  </a>
+                  <div class="card-product__details">
+                    <span class="card-product__category">Bag</span>
+                    <div class="card-product__prices">
+                      <span class="card-product__old-price">$220.00</span>
+                      <span class="card-product__price card-product__price--new">$198.00</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li data-tab-type="jacket" class="tab-item swiper-slide">
+                <article class="slider__card card-product">
+                  <div class="card-product__image">
+                    <a href="#!">
+                      <img src="img/products/image-01.webp" alt="image">
+                      <ul class="card-product__tags tags-card">
+                        <li hidden class="tags-card__tag tags-card__tag--hot">
+                          hot
+                        </li>
+                        <li hidden class="tags-card__tag tags-card__tag--sale">
+                          sale
+                        </li>
+                        <li class="tags-card__tag tags-card__tag--new">
+                          new
+                        </li>
+                      </ul>
+                    </a>
+                    <div class="card-product__footer footer-product">
+                      <div class="footer-product__icons">
+                        <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                          aria-label="add to favorites"></button>
+                        <button type="button" class="footer-product__icon hover-color _icon-search"
+                          aria-label="open search form"></button>
+                      </div>
+                      <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                    </div>
+                  </div>
+                  <a href="#!" class="card-product__name hover-color">
+                    <h3>Adicolor Classics Joggers</h3>
+                  </a>
+                  <div class="card-product__details">
+                    <span class="card-product__category">Dress</span>
+                    <div class="card-product__prices">
+                      <span hidden class="card-product__old-price">$220.00</span>
+                      <span class="card-product__price">$63.85</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li data-tab-type="hoodies" class="tab-item swiper-slide">
+                <article class="slider__card card-product">
+                  <div class="card-product__image">
+                    <a href="#!">
+                      <img src="img/products/image-02.webp" alt="image">
+                      <ul class="card-product__tags tags-card">
+                        <li class="tags-card__tag tags-card__tag--hot">
+                          hot
+                        </li>
+                        <li hidden class="tags-card__tag tags-card__tag--sale">
+                          sale
+                        </li>
+                        <li hidden class="tags-card__tag tags-card__tag--new">
+                          new
+                        </li>
+                      </ul>
+                    </a>
+                    <div class="card-product__footer footer-product">
+                      <div class="footer-product__icons">
+                        <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                          aria-label="add to favorites"></button>
+                        <button type="button" class="footer-product__icon hover-color _icon-search"
+                          aria-label="open search form"></button>
+                      </div>
+                      <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                    </div>
+                  </div>
+                  <a href="#!" class="card-product__name hover-color">
+                    <h3>Nike Sportswear Futura Luxe</h3>
+                  </a>
+                  <div class="card-product__details">
+                    <span class="card-product__category">Bag</span>
+                    <div class="card-product__prices">
+                      <span hidden class="card-product__old-price">$220.00</span>
+                      <span class="card-product__price">$130.00</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li data-tab-type="shirt" class="tab-item swiper-slide">
+                <article class="slider__card card-product">
+                  <div class="card-product__image">
+                    <a href="#!">
+                      <img src="img/products/image-03.webp" alt="image">
+                      <ul class="card-product__tags tags-card">
+                        <li hidden class="tags-card__tag tags-card__tag--hot">
+                          hot
+                        </li>
+                        <li hidden class="tags-card__tag tags-card__tag--sale">
+                          sale
+                        </li>
+                        <li hidden class="tags-card__tag tags-card__tag--new">
+                          new
+                        </li>
+                      </ul>
+                    </a>
+                    <div class="card-product__footer footer-product">
+                      <div class="footer-product__icons">
+                        <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                          aria-label="add to favorites"></button>
+                        <button type="button" class="footer-product__icon hover-color _icon-search"
+                          aria-label="open search form"></button>
+                      </div>
+                      <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                    </div>
+                  </div>
+                  <a href="#!" class="card-product__name hover-color">
+                    <h3>Geometric print Scarf</h3>
+                  </a>
+                  <div class="card-product__details">
+                    <span class="card-product__category">scarf</span>
+                    <div class="card-product__prices">
+                      <span hidden class="card-product__old-price">$220.00</span>
+                      <span class="card-product__price">$53.00</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li data-tab-type="hoodies" class="tab-item swiper-slide">
+                <article class="slider__card card-product">
+                  <div class="card-product__image">
+                    <a href="#!">
+                      <img src="img/products/image-04.webp" alt="image">
+                      <ul class="card-product__tags tags-card">
+                        <li hidden class="tags-card__tag tags-card__tag--hot">
+                          hot
+                        </li>
+                        <li class="tags-card__tag tags-card__tag--sale">
+                          sale
+                        </li>
+                        <li hidden class="tags-card__tag tags-card__tag--new">
+                          new
+                        </li>
+                      </ul>
+                    </a>
+                    <div class="card-product__footer footer-product">
+                      <div class="footer-product__icons">
+                        <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                          aria-label="add to favorites"></button>
+                        <button type="button" class="footer-product__icon hover-color _icon-search"
+                          aria-label="open search form"></button>
+                      </div>
+                      <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                    </div>
+                  </div>
+                  <a href="#!" class="card-product__name hover-color">
+                    <h3>Yellow Reserved Hoodie</h3>
+                  </a>
+                  <div class="card-product__details">
+                    <span class="card-product__category">Dress</span>
+                    <div class="card-product__prices">
+                      <span class="card-product__old-price">$364.00</span>
+                      <span class="card-product__price card-product__price--new">$155.00</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li data-tab-type="jacket" class="tab-item swiper-slide">
+                <article class="slider__card card-product">
+                  <div class="card-product__image">
+                    <a href="#!">
+                      <img src="img/products/image-05.webp" alt="image">
+                      <ul class="card-product__tags tags-card">
+                        <li class="tags-card__tag tags-card__tag--hot">
+                          hot
+                        </li>
+                        <li class="tags-card__tag tags-card__tag--sale">
+                          sale
+                        </li>
+                        <li class="tags-card__tag tags-card__tag--new">
+                          new
+                        </li>
+                      </ul>
+                    </a>
+                    <div class="card-product__footer footer-product">
+                      <div class="footer-product__icons">
+                        <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                          aria-label="add to favorites"></button>
+                        <button type="button" class="footer-product__icon hover-color _icon-search"
+                          aria-label="open search form"></button>
+                      </div>
+                      <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                    </div>
+                  </div>
+                  <a href="#!" class="card-product__name hover-color">
+                    <h3>Nike Sportswear Futura Luxe</h3>
+                  </a>
+                  <div class="card-product__details">
+                    <span class="card-product__category">Bag</span>
+                    <div class="card-product__prices">
+                      <span class="card-product__old-price">$220.00</span>
+                      <span class="card-product__price card-product__price--new">$198.00</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li data-tab-type="hoodies" class="tab-item swiper-slide">
+                <article class="slider__card card-product">
+                  <div class="card-product__image">
+                    <a href="#!">
+                      <img src="img/products/image-06.webp" alt="image">
+                      <ul class="card-product__tags tags-card">
+                        <li class="tags-card__tag tags-card__tag--hot">
+                          hot
+                        </li>
+                        <li class="tags-card__tag tags-card__tag--sale">
+                          sale
+                        </li>
+                        <li class="tags-card__tag tags-card__tag--new">
+                          new
+                        </li>
+                      </ul>
+                    </a>
+                    <div class="card-product__footer footer-product">
+                      <div class="footer-product__icons">
+                        <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                          aria-label="add to favorites"></button>
+                        <button type="button" class="footer-product__icon hover-color _icon-search"
+                          aria-label="open search form"></button>
+                      </div>
+                      <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                    </div>
+                  </div>
+                  <a href="#!" class="card-product__name hover-color">
+                    <h3>Nike Sportswear Futura Luxe</h3>
+                  </a>
+                  <div class="card-product__details">
+                    <span class="card-product__category">Bag</span>
+                    <div class="card-product__prices">
+                      <span class="card-product__old-price">$220.00</span>
+                      <span class="card-product__price card-product__price--new">$198.00</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li data-tab-type="shirt" class="tab-item swiper-slide">
+                <article class="slider__card card-product">
+                  <div class="card-product__image">
+                    <a href="#!">
+                      <img src="img/products/image-07.webp" alt="image">
+                      <ul class="card-product__tags tags-card">
+                        <li class="tags-card__tag tags-card__tag--hot">
+                          hot
+                        </li>
+                        <li class="tags-card__tag tags-card__tag--sale">
+                          sale
+                        </li>
+                        <li class="tags-card__tag tags-card__tag--new">
+                          new
+                        </li>
+                      </ul>
+                    </a>
+                    <div class="card-product__footer footer-product">
+                      <div class="footer-product__icons">
+                        <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                          aria-label="add to favorites"></button>
+                        <button type="button" class="footer-product__icon hover-color _icon-search"
+                          aria-label="open search form"></button>
+                      </div>
+                      <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                    </div>
+                  </div>
+                  <a href="#!" class="card-product__name hover-color">
+                    <h3>Nike Sportswear Futura Luxe</h3>
+                  </a>
+                  <div class="card-product__details">
+                    <span class="card-product__category">Bag</span>
+                    <div class="card-product__prices">
+                      <span class="card-product__old-price">$220.00</span>
+                      <span class="card-product__price card-product__price--new">$198.00</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li data-tab-type="shirt" class="tab-item swiper-slide">
+                <article class="slider__card card-product">
+                  <div class="card-product__image">
+                    <a href="#!">
+                      <img src="img/products/image-07.webp" alt="image">
+                      <ul class="card-product__tags tags-card">
+                        <li class="tags-card__tag tags-card__tag--hot">
+                          hot
+                        </li>
+                        <li class="tags-card__tag tags-card__tag--sale">
+                          sale
+                        </li>
+                        <li class="tags-card__tag tags-card__tag--new">
+                          new
+                        </li>
+                      </ul>
+                    </a>
+                    <div class="card-product__footer footer-product">
+                      <div class="footer-product__icons">
+                        <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                          aria-label="add to favorites"></button>
+                        <button type="button" class="footer-product__icon hover-color _icon-search"
+                          aria-label="open search form"></button>
+                      </div>
+                      <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                    </div>
+                  </div>
+                  <a href="#!" class="card-product__name hover-color">
+                    <h3>Nike Sportswear Futura Luxe</h3>
+                  </a>
+                  <div class="card-product__details">
+                    <span class="card-product__category">Bag</span>
+                    <div class="card-product__prices">
+                      <span class="card-product__old-price">$220.00</span>
+                      <span class="card-product__price card-product__price--new">$198.00</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li data-tab-type="shirt" class="tab-item swiper-slide">
+                <article class="slider__card card-product">
+                  <div class="card-product__image">
+                    <a href="#!">
+                      <img src="img/products/image-07.webp" alt="image">
+                      <ul class="card-product__tags tags-card">
+                        <li class="tags-card__tag tags-card__tag--hot">
+                          hot
+                        </li>
+                        <li class="tags-card__tag tags-card__tag--sale">
+                          sale
+                        </li>
+                        <li class="tags-card__tag tags-card__tag--new">
+                          new
+                        </li>
+                      </ul>
+                    </a>
+                    <div class="card-product__footer footer-product">
+                      <div class="footer-product__icons">
+                        <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                          aria-label="add to favorites"></button>
+                        <button type="button" class="footer-product__icon hover-color _icon-search"
+                          aria-label="open search form"></button>
+                      </div>
+                      <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                    </div>
+                  </div>
+                  <a href="#!" class="card-product__name hover-color">
+                    <h3>Nike Sportswear Futura Luxe</h3>
+                  </a>
+                  <div class="card-product__details">
+                    <span class="card-product__category">Bag</span>
+                    <div class="card-product__prices">
+                      <span class="card-product__old-price">$220.00</span>
+                      <span class="card-product__price card-product__price--new">$198.00</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li data-tab-type="jacket" class="tab-item swiper-slide">
+                <article class="slider__card card-product">
+                  <div class="card-product__image">
+                    <a href="#!">
+                      <img src="img/products/image-08.webp" alt="image">
+                      <ul class="card-product__tags tags-card">
+                        <li class="tags-card__tag tags-card__tag--hot">
+                          hot
+                        </li>
+                        <li class="tags-card__tag tags-card__tag--sale">
+                          sale
+                        </li>
+                        <li class="tags-card__tag tags-card__tag--new">
+                          new
+                        </li>
+                      </ul>
+                    </a>
+                    <div class="card-product__footer footer-product">
+                      <div class="footer-product__icons">
+                        <button type="button" class="footer-product__icon hover-color _icon-favorites"
+                          aria-label="add to favorites"></button>
+                        <button type="button" class="footer-product__icon hover-color _icon-search"
+                          aria-label="open search form"></button>
+                      </div>
+                      <a href="#!" class="footer-product__button hover-color _icon-cart">shop now</a>
+                    </div>
+                  </div>
+                  <a href="#!" class="card-product__name hover-color">
+                    <h3>Nike Sportswear Futura Luxe</h3>
+                  </a>
+                  <div class="card-product__details">
+                    <span class="card-product__category">Bag</span>
+                    <div class="card-product__prices">
+                      <span class="card-product__old-price">$220.00</span>
+                      <span class="card-product__price card-product__price--new">$198.00</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button type="button"
+              class="slider__arrow slider__arrow--prev swiper-button-prev _icon-slider-arrow"></button>
+            <button type="button"
+              class="slider__arrow slider__arrow--next swiper-button-next _icon-slider-arrow"></button>
+          </div>
+        </div>
+      </section>
+      <section class="page__subscribe subscribe">
+        <div class="subscribe__container">
+          <h2 data-animated class="subscribe__title title">
+            Follow products and discounts on Instagram
+          </h2>
+          <ul class="subscribe__follow follow">
+            <li class="follow__item">
+              <a href="#!" class="follow__link _icon-instagram"><img src="img/subscribe/image-1.webp"
+                  alt="Girl in a dress and jeans jacket"></a>
+            </li>
+            <li class="follow__item">
+              <a href="#!" class="follow__link _icon-instagram"><img src="img/subscribe/image-2.webp"
+                  alt="A woman dressed in a dark brown cloak"></a>
+            </li>
+            <li class="follow__item">
+              <a href="#!" class="follow__link _icon-instagram"><img src="img/subscribe/image-3.webp"
+                  alt="Watch and bracelet are dressed on a female hand"></a>
+            </li>
+            <li class="follow__item">
+              <a href="#!" class="follow__link _icon-instagram"><img src="img/subscribe/image-4.webp"
+                  alt="A woman in a brown jacket poses sitting on a chair"></a>
+            </li>
+            <li class="follow__item">
+              <a href="#!" class="follow__link _icon-instagram"><img src="img/subscribe/image-5.webp"
+                  alt="A woman in a light colorful summer dress"></a>
+            </li>
+            <li class="follow__item">
+              <a href="#!" class="follow__link _icon-instagram"><img src="img/subscribe/image-6.webp"
+                  alt="Watch is dressed on the arm"></a>
+            </li>
+          </ul>
+          <h2 data-animated class="subscribe__title title">
+            Or subscribe to the newsletter
+          </h2>
+          <form class="subscribe__form" action="#">
+            <input type="email" name="form[]" placeholder="Email address..." required
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Please enter a valid email address">
+            <div data-animated class="button-submit-wrapper">
+              <button class="button-submit _icon-send" type="submit">
+                SUBMIT
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__top top-footer">
+        <div class="top-footer__container">
+          <div class="top-footer__content content-top">
+            <a href="#!" class="content-top__logo"><img src="img/header/logo.svg" alt="Logo of the Coral, Inc."></a>
+            <p class="content-top__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+            <address class="content-top__socials">
+              <ul>
+                <li class="content-top__social">
+                  <a href="#!" target="_blank" class="content-top__social-link _icon-facebook hover-color"></a>
+                </li>
+                <li class="content-top__social">
+                  <a href="#!" target="_blank" class="content-top__social-link _icon-twitter hover-color"></a>
+                </li>
+                <li class="content-top__social">
+                  <a href="#!" target="_blank" class="content-top__social-link _icon-linkedin hover-color"></a>
+                </li>
+                <li class="content-top__social">
+                  <a href="#!" target="_blank" class="content-top__social-link _icon-instagram hover-color"></a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div data-spoilers="768,max" class="top-footer__menu menu-top">
+            <details class="menu-top__column">
+              <summary data-spoiler class="menu-top__title">CATALOG</summary>
+              <ul class="menu-top__list">
+                <li class="menu-top__item">
+                  <a href="#" class="menu-top__link hover-color">Necklaces</a>
+                </li>
+                <li class="menu-top__item">
+                  <a href="#" class="menu-top__link hover-color">hoodies</a>
+                </li>
+                <li class="menu-top__item">
+                  <a href="#" class="menu-top__link hover-color">Jewelry Box</a>
+                </li>
+                <li class="menu-top__item">
+                  <a href="#" class="menu-top__link hover-color">t-shirt</a>
+                </li>
+                <li class="menu-top__item">
+                  <a href="#" class="menu-top__link hover-color">jacket</a>
+                </li>
+              </ul>
+            </details>
+            <details class="menu-top__column">
+              <summary data-spoiler class="menu-top__title">ABOUT US</summary>
+              <ul class="menu-top__list">
+                <li class="menu-top__item">
+                  <a href="#" class="menu-top__link hover-color">Our Producers</a>
+                </li>
+                <li class="menu-top__item">
+                  <a href="#" class="menu-top__link hover-color">Sitemap</a>
+                </li>
+                <li class="menu-top__item">
+                  <a href="#" class="menu-top__link hover-color">FAQ</a>
+                </li>
+                <li class="menu-top__item">
+                  <a href="#" class="menu-top__link hover-color">About Us</a>
+                </li>
+                <li class="menu-top__item">
+                  <a href="#" class="menu-top__link hover-color">Terms & Conditions</a>
+                </li>
+              </ul>
+            </details>
+            <details class="menu-top__column">
+              <summary data-spoiler class="menu-top__title">
+                CUSTOMER SERVICES
+              </summary>
+              <ul class="menu-top__list">
+                <li class="menu-top__item">
+                  <a href="#" class="menu-top__link hover-color">Contact Us</a>
+                </li>
+                <li class="menu-top__item">
+                  <a href="#" class="menu-top__link hover-color">Track Your Order</a>
+                </li>
+                <li class="menu-top__item">
+                  <a href="#" class="menu-top__link hover-color">Product Care & Repair</a>
+                </li>
+                <li class="menu-top__item">
+                  <a href="#" class="menu-top__link hover-color">Book an Appointment</a>
+                </li>
+                <li class="menu-top__item">
+                  <a href="#" class="menu-top__link hover-color">Shipping & Returns</a>
+                </li>
+              </ul>
+            </details>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom bottom-footer">
+        <div class="bottom-footer__container">
+          <div class="bottom-footer__copyright">&copy; 2022 Coral , Inc.</div>
+          <ul class="bottom-footer__payments">
+            <li class="bottom-footer__payment">
+              <img src="img/footer/payment-1.webp" alt="payment system logo">
+            </li>
+            <li class="bottom-footer__payment">
+              <img src="img/footer/payment-2.webp" alt="payment system logo">
+            </li>
+            <li class="bottom-footer__payment">
+              <img src="img/footer/payment-3.webp" alt="payment system logo">
+            </li>
+            <li class="bottom-footer__payment">
+              <img src="img/footer/payment-4.webp" alt="payment system logo">
+            </li>
+            <li class="bottom-footer__payment">
+              <img src="img/footer/payment-5.webp" alt="payment system logo">
+            </li>
+            <li class="bottom-footer__payment">
+              <img src="img/footer/payment-6.webp" alt="payment system logo">
+            </li>
+          </ul>
+          <a href="#!" class="bottom-footer__up _icon-up-arrow hover-color">Scroll to top</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
